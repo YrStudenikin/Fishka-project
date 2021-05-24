@@ -1,0 +1,53 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.quick-bar{
+  width: 80px;
+}
+
+.quick-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 120;
+  transition: width .5s;
+}
+
+.btn-burger {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: $purple-gradient;
+  z-index: 2;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 90px;
+  background: linear-gradient(0deg, rgba(31,30,34,1) 0%, rgba(52,57,65,1) 100%);
+  transition: all .1s ease-out;
+  &__logo {
+    &-img {
+      float: right;
+    }
+  }
+}
+
+.main, .top-bar {
+  margin-left: 90px;
+}
+.main {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0 0;
+}
