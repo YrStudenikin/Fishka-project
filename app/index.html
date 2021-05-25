@@ -12,21 +12,23 @@
 
 <div class="main-wrapper">
   <div class="quick-bar">
-    <button class="btn btn-burger">
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-      <span class="btn-burger__el"></span>
-    </button>
+    <div class="btn-bento">
+      <button class="btn btn-bento__inner">
+        <span class="btn-bento__el r1 c1"></span>
+        <span class="btn-bento__el r1 c2"></span>
+        <span class="btn-bento__el r1 c3"></span>
+        <span class="btn-bento__el r2 c1"></span>
+        <span class="btn-bento__el r2 c2"></span>
+        <span class="btn-bento__el r2 c3"></span>
+        <span class="btn-bento__el r3 c1"></span>
+        <span class="btn-bento__el r3 c2"></span>
+        <span class="btn-bento__el r3 c3"></span>
+      </button>
+    </div>
   </div>
 
   <div class="top-bar">
-    <div class="container">
+    <div class="container h-100">
       <div class="top-bar__left">
         <div class="top-bar__links">
           <ul class="nav-links top-bar__menu">
@@ -39,24 +41,28 @@
           </ul>
         </div>
       </div>
+
       <a href="javascript:void(0);" class="top-bar__logo">
         <img src="images/logo.png" alt="" class="top-bar__logo-img">
       </a>
+
       <div class="top-bar__right">
         <div class="top-bar__user">
           <div class="switch-language">
-            <span class="switch-language__current">RU</span>
-            <span></span>
+            <div class="switch-language__inner">
+              <span class="switch-language__current">RU</span>
+              <img class="switch-language__arrow" src="images/down-arrow-gold.png" alt="">
+            </div>
           </div>
           <div class="user-top">
             <div class="user-top__info">
-              <img class="svg user-top__info-icon" src="images/user.svg" alt="">
+              <img class="svg user-top__info-icon" src="images/user.png" alt="">
               <div class="user-top__info-data">
-                <span class="user-top__info-username">username123</span>
+                <span class="user-top__info-username font-14">username123</span>
                 <span class="user-top__info-balance">5,000.00 $</span>
               </div>
             </div>
-            <button class="btn btn-gold" id="deposit-btn">
+            <button class="btn btn-gold deposit-btn font-20" id="deposit-btn">
               Пополнить
             </button>
           </div>

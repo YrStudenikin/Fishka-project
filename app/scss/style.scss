@@ -6,7 +6,7 @@
 
 
 .quick-bar{
-  width: 80px;
+  width: 90px;
 }
 
 .quick-bar {
@@ -19,12 +19,119 @@
   transition: width .5s;
 }
 
-.btn-burger {
-  position: relative;
+.btn-bento {
   width: 90px;
   height: 90px;
   background: $purple-gradient;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    &.active {
+      transform: rotate(-45deg);
+
+      .btn-bento__el.r1.c1,
+      .btn-bento__el.r1.c3,
+      .btn-bento__el.r3.c1,
+      .btn-bento__el.r3.c3 {
+        left: 40%;
+        top: 40%;
+      }
+
+      .btn-bento__el.r2.c1,
+      .btn-bento__el.r2.c3 {
+        width: 50%;
+      }
+
+      .btn-bento__el.r3.c2,
+      .btn-bento__el.r1.c2 {
+        height: 50%;
+      }
+
+      .btn-bento__el.r3.c2 {
+        top: 50%;
+      }
+
+      .btn-bento__el.r2.c3 {
+        left: 50%;
+      }
+    }
+  }
+  &__el {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .r1 {
+    top: 0;
+  }
+  .r2 {
+    top: 40%;
+  }
+  .r3 {
+    top: 80%;
+  }
+  .c1 {
+    left: 0;
+  }
+  .c2 {
+    left: 40%;
+  }
+  .c3 {
+    left: 80%;
+  }
+}
+
+.nav-links {
+  &__item {
+    &.top-bar__menu-item {
+      margin-right: 20px;
+      height: 75px;
+      min-width: 235px;
+      $border: 2px;
+      color: $color-white;
+      background: #31353c;
+      box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+      background-clip: padding-box;
+      border-left: solid $border transparent;
+      border-right: solid $border transparent;
+      border-bottom: solid $border transparent;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      position: relative;
+      box-sizing: border-box;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+        background: $gold-gradient-border;
+      }
+
+      &.top-bar__menu-item--last {
+        margin-right: 0;
+      }
+      .nav-links__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 .top-bar {
@@ -36,10 +143,96 @@
   height: 90px;
   background: linear-gradient(0deg, rgba(31,30,34,1) 0%, rgba(52,57,65,1) 100%);
   transition: all .1s ease-out;
+  &>* {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  &__right {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  &__links {
+    display: flex;
+  }
+  &__menu {
+    display: flex;
+  }
   &__logo {
     &-img {
-      float: right;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15px;
     }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    &>* {
+      display: flex;
+      height: 50px;
+    }
+  }
+}
+
+.user-top {
+  display: flex;
+  &__info {
+    display: flex;
+    align-items: center;
+    border-radius: $border-radius-min;
+    background: #1f1f23;
+    padding: 0 20px 0 15px;
+    position: relative;
+    right: -5px;
+    &-icon {
+      padding-right: 12px;
+    }
+    &-data {
+      display: flex;
+      flex-direction: column;
+    }
+    &-username {
+      color: $color-white;
+    }
+    &-balance {
+      font-size: 19px;
+      background-image: linear-gradient(-105deg, rgba(235,177,123,1) 0%, rgba(195,150,107,1) 27%, rgba(228,182,127,1) 47%, rgba(254,217,144,1) 67%, rgba(255,255,255,1) 86%, rgba(252,211,132,1) 100%);
+      color:transparent;
+      background-clip: text;
+    }
+  }
+  .deposit-btn {
+    padding: 0 20px;
+    border-radius: $border-radius-min;
+    z-index: 2;
+  }
+}
+
+.switch-language {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  cursor: pointer;
+  &__inner {
+    border-radius: $border-radius-middle;
+    background-color: #26272d;
+    padding: 0 16px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+    color: $color-white;
+
+  }
+  &__arrow {
+    padding-left: 8px;
   }
 }
 
