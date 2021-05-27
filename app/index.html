@@ -10,7 +10,7 @@
 
 <body>
 
-<div class="main-wrapper">
+<div class="main-wrapper" id="app-wrapper">
   <div class="quick-bar">
     <div class="btn-bento">
       <button class="btn btn-bento__inner">
@@ -28,7 +28,7 @@
     <div class="quick-bar__links">
       <div class="quick-bar__links-wrap">
         <ul class="nav-links nav-links--v">
-          <li class="nav-links__item">
+          <li class="nav-links__item" data-tippy-content="Игры">
             <a class="nav-links__item-link" href="javascript:void(0);">
               <div class="nav-links__link">
                 <img class="svg nav-links__link-icon" src="images/quick-bar/game-control.svg" alt="">
@@ -36,12 +36,68 @@
               <span class="nav-links__title">Игры</span>
             </a>
           </li>
-          <li class="nav-links__item">
+          <li class="nav-links__item" data-tippy-content="Спорт">
             <a class="nav-links__item-link" href="javascript:void(0);">
               <div class="nav-links__link">
-                <img class="svg nav-links__link-icon" src="images/quick-bar/game-control.svg" alt="">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/football.svg" alt="">
               </div>
-              <span class="nav-links__title">Игры</span>
+              <span class="nav-links__title">Спорт</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Бонусы">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/gift-box.svg" alt="">
+              </div>
+              <span class="nav-links__title">Бонусы</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Турниры">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/trophy.svg" alt="">
+              </div>
+              <span class="nav-links__title">Турниры</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Акции">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/megaphone.svg" alt="">
+              </div>
+              <span class="nav-links__title">Акции</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Поддержка">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/headphones.svg" alt="">
+              </div>
+              <span class="nav-links__title">Поддержка</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Новости">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/chat.svg" alt="">
+              </div>
+              <span class="nav-links__title">Новости</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="FAQ">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/help.svg" alt="">
+              </div>
+              <span class="nav-links__title">FAQ</span>
+            </a>
+          </li>
+          <li class="nav-links__item" data-tippy-content="Наш Telegram">
+            <a class="nav-links__item-link" href="javascript:void(0);">
+              <div class="nav-links__link">
+                <img class="svg nav-links__link-icon" src="images/quick-bar/paper-plane.svg" alt="">
+              </div>
+              <span class="nav-links__title">Наш Telegram</span>
             </a>
           </li>
         </ul>
@@ -100,10 +156,36 @@
         </div>
       </div>
     </div>
+
+    <div class="home-bg-section">
+      <div class="home-bg-section__inner">
+        <div class="container">
+          <div class="games-start">
+            <div class="jackpot">
+              <div class="jackpot__content">
+                <div class="jackpot__block">
+                  <div class="jackpot__title">
+                    Casino Jackpot
+                  </div>
+                  <div class="jackpot__price">
+                    <div class="jackpot__price-nums" id="top-jackpot-val">
+
+                    </div>
+                    <div class="jackpot__price-curr">$</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="overlay"></div>
 </div>
 
-  <script src="js/main.min.js"></script>
+  <script type="module" src="js/main.min.js"></script>
 </body>
 
 </html>

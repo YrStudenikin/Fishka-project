@@ -41,7 +41,10 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/main.js'
+    'app/js/main.js',
+    'app/js/popper.min.js',
+    'app/js/jquery.animateNumber.min.js',
+    'app/js/tippy-bundle.umd.js',
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
