@@ -26,7 +26,7 @@ $(document).ready(function(){
     //quick-bar (+tooltips)
     const tippyInstances = tippy('[data-tippy-content]', {
         arrow: true,
-        delay: [100, 150],
+        delay: [50, 150],
         animation: 'shift-away',
         placement: 'right',
     });
@@ -57,7 +57,8 @@ $(document).ready(function(){
         }
     });
 
-    let decimal_places = 2;
+
+    /*let decimal_places = 2;
     let decimal_factor = decimal_places === 0 ? 1 : Math.pow(10, decimal_places);
 
     $('#top-jackpot-val')
@@ -79,5 +80,31 @@ $(document).ready(function(){
                 }
             },
             20000
-        );
+        );*/
+
+    let el = document.querySelector('#top-jackpot-val');
+    let qty = 217017891;
+
+    let od = new Odometer({
+        el: el,
+        value: qty,
+        format: '( ddd),dd',
+        duration: 3000,
+        theme: 'default',
+    });
+
+    qty += 436;
+    od.update(qty);
+
+    setInterval(function(){
+        qty += 436;
+        od.update(qty);
+    }, 5000);
+
+
+    $('.icon-tab-btn').on('click', function () {
+        $('.icon-tab-btn').removeClass('icon-tab-btn--active');
+        $(this).addClass('icon-tab-btn--active');
+    })
 })
+

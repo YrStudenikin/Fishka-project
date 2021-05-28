@@ -1,5 +1,5 @@
 
-$gold-gradient-border: linear-gradient(to right, rgb(222, 178, 121) 0%, rgb(216, 172, 128) 21%, rgb(254, 222, 136) 51%, rgb(255, 240, 198) 100%);
+$gold-gradient-border: linear-gradient(45deg, rgba(222,178,121,1) 0%, rgba(216,172,128,1) 21%, rgba(254,222,136,1) 62%, rgba(255,240,198,1) 100%);
 $gold-gradient-background: linear-gradient(to top, rgb(222, 178, 121) 0%, rgb(216, 172, 128) 21%, rgb(254, 222, 136) 51%, rgb(255, 240, 198) 100%);
 $purple-gradient: linear-gradient(to top, rgb(151, 42, 230) 0%, rgb(98, 111, 191) 100%);
 $purple-dark-gradient: linear-gradient(90deg, rgba(174,44,241,1) 0%, rgba(119,118,255,1) 50%, rgba(50,49,83,1) 100%);
@@ -8,6 +8,7 @@ $color-gold: #f6c980;
 $color-white: #ffffff;
 $color-dark: #343841;
 $color-light-blue: #62718e;
+$color-violet: #983be0;
 
 $border-radius-min : 5px;
 $border-radius-middle : 10px;

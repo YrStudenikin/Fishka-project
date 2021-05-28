@@ -44,6 +44,7 @@ function scripts() {
     'app/js/main.js',
     'app/js/popper.min.js',
     'app/js/jquery.animateNumber.min.js',
+    'app/js/odometer.min.js',
     'app/js/tippy-bundle.umd.js',
   ])
     .pipe(concat('main.min.js'))

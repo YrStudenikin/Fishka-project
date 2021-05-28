@@ -4,6 +4,7 @@ body {
 	font-family: "../fonts/Gilroy", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
+	line-height: 22px;
 }
 
 body * {
@@ -41,6 +42,31 @@ a {
 .btn-gold {
 	background: $gold-gradient-background;
 	color: #212124;
+}
+.btn--default {
+	border-radius: $border-radius-min;
+	color: $color-white;
+	min-height: 40px;
+	min-width: 200px;
+}
+.btn--purple {
+	background: $purple-gradient;
+}
+.btn--border-gold {
+	$border: 2px;
+	background-clip: padding-box;
+	border: solid $border transparent;
+	position: relative;
+	box-sizing: border-box;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		z-index: -1;
+		margin: -$border;
+		border-radius: inherit;
+		background: $gold-gradient-border;
+	}
 }
 
 .wrapper {
