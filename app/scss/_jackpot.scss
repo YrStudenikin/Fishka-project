@@ -1,0 +1,33 @@
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-slot-machine .odometer-digit {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  padding: 0px 6px 0;
+  background: linear-gradient(0deg, rgba(31, 30, 33, 1) 0%, rgba(40, 40, 46, 1) 26%, rgba(52, 56, 65, 1) 58%, rgba(40, 40, 40, 1) 81%, rgba(35, 35, 39, 1) 100%);
+}
+
+.odometer.odometer-auto-theme .odometer-digit:first-child, .odometer.odometer-theme-slot-machine .odometer-digit:first-child,
+.odometer.odometer-auto-theme .odometer-digit:first-child, .odometer.odometer-theme-slot-machine .odometer-digit:last-child, {
+  box-shadow: none;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-slot-machine {
+  border-radius: 0;
+  background-image: none;
+  background-size: 100%;
+  background-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0;
+  color: $color-dark;
+  line-height: 1.35em;
+  border: none;
+  -webkit-text-stroke: inherit;
+}
+
+.odometer-value {
+  color: $color-white;
+}
+
+.odometer.odometer-auto-theme .odometer-digit+.odometer-digit, .odometer.odometer-theme-slot-machine .odometer-digit+.odometer-digit {
+  margin-left: 3px;
+}

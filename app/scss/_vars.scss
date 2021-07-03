@@ -2,7 +2,9 @@
 $gold-gradient-border: linear-gradient(45deg, rgba(222,178,121,1) 0%, rgba(216,172,128,1) 21%, rgba(254,222,136,1) 62%, rgba(255,240,198,1) 100%);
 $gold-gradient-background: linear-gradient(to top, rgb(222, 178, 121) 0%, rgb(216, 172, 128) 21%, rgb(254, 222, 136) 51%, rgb(255, 240, 198) 100%);
 $purple-gradient: linear-gradient(to top, rgb(151, 42, 230) 0%, rgb(98, 111, 191) 100%);
-$purple-dark-gradient: linear-gradient(90deg, rgba(174,44,241,1) 0%, rgba(119,118,255,1) 50%, rgba(50,49,83,1) 100%);
+$purple-dark-gradient: linear-gradient(210deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+$dark-gradient : linear-gradient(196deg, rgba(31,30,34,1) 0%, rgba(52,57,65,1) 100%);
+$counter-dark-gradient: linear-gradient(180deg, rgba(31,30,33,1) 0%, rgba(40,40,46,1) 26%, rgba(52,56,65,1) 58%, rgba(40,40,40,1) 81%, rgba(35,35,39,1) 100%);
 
 $color-gold: #f6c980;
 $color-white: #ffffff;
@@ -14,3 +16,57 @@ $border-radius-min : 5px;
 $border-radius-middle : 10px;
 
 $quick-bar-width : 90px;
+
+@mixin gold-linear-border {
+  $border: 2px;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  position: relative;
+  box-sizing: border-box;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: $gold-gradient-border;
+  }
+}
+
+@mixin violet-linear-border {
+    $border: 1px;
+    background-clip: padding-box;
+    border: solid $border transparent;
+    position: relative;
+    box-sizing: border-box;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      border-radius: inherit;
+      background: linear-gradient(90deg, rgba(151, 42, 230, 1) 0%, rgba(98, 111, 191, 1) 100%);
+    }
+}
+
+@mixin flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin absolute-horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

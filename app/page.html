@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishka casino</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<div class="main-wrapper" id="app-wrapper">
+    <div class="quick-bar">
+        <div class="btn-bento">
+            <button class="btn btn-bento__inner">
+                <span class="btn-bento__el r1 c1"></span>
+                <span class="btn-bento__el r1 c2"></span>
+                <span class="btn-bento__el r1 c3"></span>
+                <span class="btn-bento__el r2 c1"></span>
+                <span class="btn-bento__el r2 c2"></span>
+                <span class="btn-bento__el r2 c3"></span>
+                <span class="btn-bento__el r3 c1"></span>
+                <span class="btn-bento__el r3 c2"></span>
+                <span class="btn-bento__el r3 c3"></span>
+            </button>
+        </div>
+        <div class="quick-bar__links">
+            <div class="quick-bar__links-wrap">
+                <ul class="nav-links nav-links--v">
+                    <li class="nav-links__item" data-tippy-content="Игры">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/game-control.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Игры</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Спорт">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/football.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Спорт</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Бонусы">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/gift-box.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Бонусы</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Турниры">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/trophy.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Турниры</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Акции">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/megaphone.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Акции</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Поддержка">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/headphones.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Поддержка</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Новости">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/chat.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Новости</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="FAQ">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/help.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-links__item" data-tippy-content="Наш Telegram">
+                        <a class="nav-links__item-link" href="javascript:void(0);">
+                            <div class="nav-links__link">
+                                <img class="svg nav-links__link-icon" src="images/quick-bar/paper-plane.svg" alt="">
+                            </div>
+                            <span class="nav-links__title">Наш Telegram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <div class="container h-100">
+            <div class="top-bar__left">
+                <div class="top-bar__links">
+                    <ul class="nav-links top-bar__menu">
+                        <li class="nav-links__item top-bar__menu-item">
+                            <a href="javascript:void(0);" class="nav-links__link">Live дилеры</a>
+                        </li>
+                        <li class="nav-links__item top-bar__menu-item top-bar__menu-item--last">
+                            <a href="javascript:void(0);" class="nav-links__link">F.A.Q.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="top-bar__logo">
+                <img src="images/logo.png" alt="" class="top-bar__logo-img">
+            </a>
+
+            <div class="top-bar__right">
+                <div class="top-bar__user">
+                    <div class="switch-language">
+                        <div class="switch-language__inner">
+                            <span class="switch-language__current">RU</span>
+                            <img class="switch-language__arrow" src="images/down-arrow-gold.png" alt="">
+                        </div>
+                    </div>
+                    <div class="user-top">
+                        <div class="user-top__info">
+                            <img class="svg user-top__info-icon" src="images/user.png" alt="">
+                            <div class="user-top__info-data">
+                                <span class="user-top__info-username font-14">username123</span>
+                                <span class="user-top__info-balance">5,000.00 $</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-gold deposit-btn font-20" id="deposit-btn">
+                            Пополнить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="page">
+            <div class="page__banner" style="background-image: url('images/LasVegas-full.png')">
+                <div class="container">
+                    <div class="page__title font-bold">Турнир</div>
+                    <div class="page__title font-bold text-upper">Las Vegas</div>
+                </div>
+                <img class="page__banner-tourney-logo logo--vegas" src="images/lasvegas-logo-big.png" alt="">
+            </div>
+            <div class="page-bg-section" style="background-image: url('images/page-single-tournament/bg.png')">
+                <div class="container">
+                    <section class="block-pb-space">
+                        <div class="middle-title">Призы</div>
+                        <div class="row">
+                            <div class="col-md-3 bb-gold">
+                                <div class="table-award bb-gold__inner box-dark-100">
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">1</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">2</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">3</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">4</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">5</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">6</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bb-gold">
+                                <div class="table-award bb-gold__inner box-dark-100">
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">1</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">2</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">3</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">4</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">5</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">6</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bb-gold">
+                                <div class="table-award bb-gold__inner box-dark-100">
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">1</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">2</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">3</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">4</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">5</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">6</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 bb-gold">
+                                <div class="table-award bb-gold__inner box-dark-100">
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">1</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">2</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">3</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">4</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">5</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-award__row">
+                                        <div class="table-award__num font-bold font-24">6</div>
+                                        <div class="table-award__info">
+                                            <div class="table-award__info-award font-bold font-24 font-color-gold">450
+                                            </div>
+                                            <div class="font-14">фриспинов со ставкой 4.00$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+</div>
+
+<footer class="footer">
+    <div class="container-full purple-dark-bg slider-payments">
+        <div class="container">
+            <div class="slider-payments__wrapper position-relative">
+                <div class="slider-payments__inner swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/yandex.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/mastercard.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/payeer.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/qiwi.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/visa.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/megafon.png" alt="">
+                        </div>
+                        <div class="slider-payments__item swiper-slide">
+                            <img class="slider-payments__img" src="images/mir.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-button-prev"><img src="images/down-arrow.png" alt="prev"></div>
+                <div class="slider-button-next"><img src="images/down-arrow.png" alt="next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-col fc--p1">
+                <div class="footer-col__title font-16 text-upper">Игры</div>
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Слоты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Видео-покер</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Live-casino</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Спорт</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Настольные</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Buy Bonus Games</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Статусы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Лотореи</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col fc--p2">
+                <div class="footer-col__title font-16 text-upper">FAQ</div>
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Бонусная политика</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Платежная политика</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Предупреждение о рисках</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Джекпот</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Ответственная игра</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Турниры</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Cashback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col fc--p3 fc--between">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Правила</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Вывести деньги из онлайн казино</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Telegram</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Партнёрская программа</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer-copyright">
+                    © 2020 Все права защищены.
+                </div>
+            </div>
+            <div class="footer-col fc--p4 fc--between">
+                <div class="footer-col__text font-16">
+                    Информация на сайте предоставлена оператором сайта - компанией Galaktika N.V., зарегистрированной
+                    под No 140803 по адресу Groot Kwartierweg 10 Willemstad Curacao, CW. Деятельность компании Galaktika
+                    N.V. лицензируется и регулируется Antillephone N.V
+                </div>
+                <div class="footer-col__text font-16">
+                    Under any circumstances persons under 18 years of age or under the age of majority eligible for
+                    gambling under the laws of a particular jurisdiction ("Eligible Age") may not use the services of
+                    the Website.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js/main.min.js"></script>
+</body>
+
+</html>

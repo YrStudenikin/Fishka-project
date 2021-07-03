@@ -1,100 +1,308 @@
 html,
 body {
-	height: 100%;
-	font-family: "../fonts/Gilroy", sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 22px;
+  height: 100%;
+  font-family: "../fonts/Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: $color-white;
 }
 
 body * {
-	-webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
-	color: $color-white;
+  color: $color-white;
 }
 
-.h-100 {height: 100%}
-.w-100 {width: 100%}
+section {
+  position: relative;
+  z-index: 1;
+}
 
-.font-24 {font-size: 24px}
-.font-20 {font-size: 20px}
-.font-18 {font-size: 18px}
-.font-16 {font-size: 16px}
-.font-14 {font-size: 14px}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+.h-100 {
+  height: 100%
+}
+
+.w-100 {
+  width: 100%
+}
+
+.font-28 {
+  font-size: 28px
+}
+.font-24 {
+  font-size: 24px
+}
+.font-23 {
+  font-size: 23px
+}
+
+.font-20 {
+  font-size: 20px
+}
+
+.font-18 {
+  font-size: 18px
+}
+
+.font-16 {
+  font-size: 16px
+}
+
+.font-14 {
+  font-size: 14px
+}
+
+.font-bold {
+  font-weight: 600
+}
+.fw-300 {font-weight: 300}
+
+.font-color-gold {
+  color: $color-gold
+}
+.fg-violet {
+  background-image: linear-gradient(189deg, rgba(119,118,255,1) 0%, rgba(174,44,241,1) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-upper {text-transform: uppercase}
+.text-center {text-align: center}
+
+.big-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: $color-white;
+  display: block;
+  line-height: initial;
+  padding-bottom: 40px;
+}
+
+.middle-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: $color-white;
+  display: block;
+  line-height: initial;
+  padding-bottom: 30px;
+}
 
 .btn {
-	border: none;
-	padding: 0;
-	background-color: inherit;
-	outline: none;
-	cursor: pointer;
-	display: inline-flex;
-	align-items: center;
-	font-weight: 600;
-	font-size: 16px;
-	text-align: center;
-	justify-content: center;
-	transition: all .1s ease-out;
+  border: none;
+  padding: 0;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  transition: all .1s ease-out;
 }
 
 .btn-gold {
-	background: $gold-gradient-background;
-	color: #212124;
+  background: $gold-gradient-background;
+  color: #212124;
 }
+
 .btn--default {
-	border-radius: $border-radius-min;
-	color: $color-white;
-	min-height: 40px;
-	min-width: 200px;
+  border-radius: $border-radius-min;
+  color: $color-white;
+  min-height: 40px;
+  min-width: 200px;
 }
+
 .btn--purple {
-	background: $purple-gradient;
+  background: $purple-gradient;
 }
+
 .btn--border-gold {
-	$border: 2px;
-	background-clip: padding-box;
-	border: solid $border transparent;
-	position: relative;
-	box-sizing: border-box;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0; right: 0; bottom: 0; left: 0;
-		z-index: -1;
-		margin: -$border;
-		border-radius: inherit;
-		background: $gold-gradient-border;
-	}
+  $border: 2px;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  position: relative;
+  box-sizing: border-box;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: $gold-gradient-border;
+  }
+}
+
+.btn--size-md {
+  width: 270px;
+  height: 52px;
+}
+
+.photo--circle-gradient {
+  position: relative;
+  border-radius: 50%;
+  @include gold-linear-border;
+  &__img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.circle-gold-linear {
+  position: relative;
+  border-radius: 50%;
+  @include gold-linear-border;
+}
+
+.purple-dark-bg {
+  background: $purple-dark-gradient;
+  box-shadow: -6.761px 1.812px 13px 0px rgba(14, 14, 14, 0.42);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: RGBA(0, 0, 0, .45);
+    z-index: 0;
+  }
+}
+
+.dark-gradient-bg {
+  background: linear-gradient( -178deg, rgb(31,30,34) 0%, rgb(52,57,65) 100%);
+  box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+  position: relative;
+
+
+  /*  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: RGBA(0, 0, 0, .45);
+      z-index: 0;
+    }*/
+
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.main-wrapper {overflow: hidden}
+.main-wrapper {
+  overflow: hidden
+}
 
 .main {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
+  flex: 1 0 auto;
 }
 
-.container{
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .container-full {
-	max-width: 100%;
-	padding: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+.block-pb-space {
+  padding-bottom: 70px;
+}
+
+.delay__1 {
+  animation-delay: .25s;
+}
+.delay__2 {
+  animation-delay: .5s;
+}
+.delay__3 {
+  animation-delay: .75s;
+}
+.delay__4 {
+  animation-delay: 1s;
 }
 
 
+span.btn--fill-in {
+  min-height: inherit;
+  min-width: inherit;
+  width: 100%;
+  @include flex-all-center;
+}
 
+//box border gold
+.bb-gold {
+  position: relative;
+  z-index: 0;
+  &__inner {
+    background: #2d3037;
+    @include gold-linear-border;
+  }
+}
 
+.box-dark-100 {
+  background: #2d3037;
+  background-clip: padding-box;
+}
+
+.br-middle-photo {
+  border-radius: $border-radius-middle;
+  img {
+    width: 100%;
+    border-radius: $border-radius-middle;
+  }
+}
+
+.gold-input-linear-wrap {
+  position: relative;
+  @include gold-linear-border;
+  border: 1px solid transparent;
+  &:before {
+    margin: -1px;
+  }
+}

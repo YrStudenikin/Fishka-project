@@ -19,5 +19,9 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap-4-grid": "^3.4.0",
+    "swiper": "^6.7.0"
+  }
 }
