@@ -100,7 +100,7 @@ const mainSlider = new Swiper('.main-slider__container', {
     loop: false,
     speed: 800,
     effect: 'fade',
-    autoplay: true,
+    autoplay: false,
     pagination: {
         el: '.main-slider__container .slider__pagination',
         clickable: true,
@@ -115,7 +115,7 @@ const sliderTournaments = new Swiper('.slider-tournaments .swiper-container', {
     slidesPerView: "auto",
     spaceBetween: 20,
     centeredSlides: true,
-    autoplay: true,
+    autoplay: false,
     navigation: {
         nextEl: '.slider-tournaments .slider-button-next',
         prevEl: '.slider-tournaments .slider-button-prev',
@@ -129,7 +129,7 @@ const sliderPromo = new Swiper('.slider-promo .swiper-container', {
     speed: 500,
     slidesPerView: 3,
     spaceBetween: 20,
-    autoplay: true,
+    autoplay: false,
     navigation: {
         nextEl: '.slider-promo .slider-button-next',
         prevEl: '.slider-promo .slider-button-prev',
@@ -143,7 +143,7 @@ const sliderStats = new Swiper('.slider-stats .swiper-container', {
     speed: 500,
     slidesPerView: 3,
     spaceBetween: 20,
-    autoplay: true,
+    autoplay: false,
     navigation: {
         nextEl: '.slider-stats .slider-button-next',
         prevEl: '.slider-stats .slider-button-prev',
@@ -157,7 +157,7 @@ const sliderPayments = new Swiper('.slider-payments .swiper-container', {
     speed: 500,
     slidesPerView: 7,
     spaceBetween: 20,
-    autoplay: true,
+    autoplay: false,
     navigation: {
         nextEl: '.slider-payments .slider-button-next',
         prevEl: '.slider-payments .slider-button-prev',
@@ -195,4 +195,3 @@ tab.on('click', function (e) {
     tab.removeClass(activeTabClass);
     $(this).addClass(activeTabClass);
 })
-

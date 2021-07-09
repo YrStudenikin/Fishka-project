@@ -478,6 +478,9 @@
     min-width: 260px;
     min-height: 50px;
     margin-top: 45px;
+    & span {
+      border-radius: 4px;
+    }
   }
 }
 
@@ -2412,3 +2415,11 @@ img.partners-banner {
 .footer-copyright {
   font-size: 14px;
 }
+
+
+
+
+
+
+
+@import 'media';

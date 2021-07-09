@@ -1,0 +1,319 @@
+@media (max-width: 1500px) {
+  body {
+    font-size: 16px;
+  }
+
+  .quick-bar,
+  .quick-bar .nav-links {
+    width: 60px;
+  }
+
+  .main {
+    padding: 75px 0 0;
+  }
+
+  .main,
+  .top-bar {
+    margin-left: 60px;
+  }
+
+  .menu-opened .quick-bar,
+  .menu-opened .quick-bar .nav-links {
+    width: 240px;
+    overflow: visible;
+  }
+
+  .nav-links {
+    &__item {
+      &.top-bar__menu-item {
+        margin-right: 15px;
+        height: 40px;
+        min-width: 140px;
+        padding: 0 10px;
+
+        &.top-bar__menu-item--last {
+          margin-right: 0;
+        }
+
+        .nav-links__link {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &--v {
+      flex-direction: column;
+
+      .nav-links__link {
+        font-size: 18px;
+        min-height: 7vh;
+        width: 60px;
+      }
+
+      .nav-links__item-link {
+        display: flex;
+        width: 100%;
+      }
+
+      .nav-links__title {
+        margin-left: -8px;
+        font-size: 16px;
+        left: 20px;
+      }
+    }
+  }
+
+  .top-bar__logo-img {
+    width: 90px;
+    height: auto;
+  }
+
+  .top-bar__user > * {
+    height: 40px;
+  }
+
+  .top-bar {
+    height: 75px;
+  }
+
+  .quick-bar {
+    &__links {
+      padding-top: 70px;
+
+      .nav-links__link-icon {
+        width: 3vh;
+        height: auto;
+        margin-top: -3px;
+      }
+    }
+
+    &__links-wrap {
+      padding-top: 2vh;
+    }
+  }
+
+  .slider-stats .slider-button-prev {
+    left: -40px;
+  }
+
+  .slider-stats .slider-button-next {
+    right: -40px;
+  }
+
+  .btn-bento {
+    width: 60px;
+    height: 60px;
+
+    &__inner {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .user-top {
+    display: flex;
+
+    &__info {
+      display: flex;
+      align-items: center;
+      border-radius: $border-radius-min;
+      background: #1f1f23;
+      padding: 0 20px 0 15px;
+      position: relative;
+      right: -5px;
+
+      &-icon {
+        padding-right: 8px;
+        width: 27px;
+      }
+
+      &-data {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-username {
+        color: $color-white;
+      }
+
+      &-balance {
+        font-size: 16px;
+      }
+    }
+
+    .deposit-btn {
+      padding: 0 20px;
+      border-radius: $border-radius-min;
+      z-index: 2;
+    }
+  }
+
+  .main-slider {
+    height: 700px;
+
+    &__slide {
+      align-items: flex-start;
+    }
+
+    &__content {
+      padding: 60px;
+    }
+
+    &__title {
+      line-height: 70px;
+
+      &-sub1 {
+        font-size: 55px;
+      }
+
+      &-sub2 {
+        font-size: 68px;
+      }
+    }
+
+    &__btn {
+      min-width: 180px;
+      min-height: 38px;
+      margin-top: 25px;
+    }
+  }
+}
+@media (max-width: 1368px) {
+  .font-20 {
+    font-size: 18px;
+  }
+
+  .font-16 {
+    font-size: 14px;
+  }
+
+  .font-14 {
+    font-size: 12px;
+  }
+
+  .tippy-content {
+    font-size: 14px;
+  }
+
+  .switch-language {
+    margin-right: 40px;
+
+    &__inner {
+      padding: 0 10px;
+      min-height: 28px;
+    }
+
+    &__current {
+      font-size: 12px;
+    }
+
+    &__arrow {
+      padding-left: 6px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    padding: 60px 0 0;
+  }
+
+  .main-slider {
+    height: 520px;
+
+    &__content {
+      padding: 60px;
+    }
+
+    &__title {
+      line-height: 42px;
+
+      &-sub1 {
+        font-size: 36px;
+      }
+
+      &-sub2 {
+        font-size: 44px;
+      }
+    }
+
+    &__btn {
+      min-width: 120px;
+      min-height: 30px;
+      margin-top: 15px;
+
+      & span {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .top-bar {
+    height: 61px;
+
+    &__links {
+      display: none;
+    }
+  }
+
+  .user-top {
+    &__info {
+      padding: 0 10px;
+      justify-content: center;
+
+      &-data {
+        display: none;
+      }
+
+      &-icon {
+        width: 20px;
+        padding-right: 0;
+      }
+
+      &-balance {}
+    }
+
+    .deposit-btn {
+      display: none;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .top-bar__logo {
+    &-img {
+      width: 40px;
+      left: 50px;
+      transform: translateX(0);
+      top: 10px;
+    }
+  }
+
+  .main-slider {
+    height: 400px;
+    &__content {
+          padding: 50px 20px 0;
+      text-align: center;
+    }
+
+    &__title {
+      line-height: 30px;
+
+      &-sub1 {
+        font-size: 26px;
+      }
+
+      &-sub2 {
+        font-size: 32px;
+      }
+    }
+
+    &__btn {
+      min-width: 80px;
+      min-height: 22px;
+      margin-top: 10px;
+
+      & span {
+        font-size: 10px;
+      }
+    }
+  }
+}
