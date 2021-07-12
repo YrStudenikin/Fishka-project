@@ -6,44 +6,45 @@
 @import 'jackpot';
 @import 'bootstrap-custom';
 
-
 .tippy-box {
   font-size: 18px;
   background-color: #26272d;
-  -webkit-box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
-  box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+  -webkit-box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
+  box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
   color: #fff;
 }
 
 .tippy-box[data-animation=shift-away][data-state=hidden] {
-  opacity: 0
+  opacity: 0;
 }
 
 .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=top] {
-  transform: translateY(10px)
+  transform: translateY(10px);
 }
 
 .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=bottom] {
-  transform: translateY(-10px)
+  transform: translateY(-10px);
 }
 
 .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=left] {
-  transform: translateX(10px)
+  transform: translateX(10px);
 }
 
 .tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=right] {
-  transform: translateX(-10px)
+  transform: translateX(-10px);
 }
 
 .tippy-arrow {
   color: #26272d;
 }
 
-.quick-bar, .quick-bar .nav-links {
+.quick-bar,
+.quick-bar .nav-links {
   width: $quick-bar-width;
 }
 
-.menu-opened .quick-bar, .menu-opened .quick-bar .nav-links {
+.menu-opened .quick-bar,
+.menu-opened .quick-bar .nav-links {
   width: 320px;
   overflow: visible;
 }
@@ -67,7 +68,7 @@
   bottom: 0;
   height: 100vh;
   z-index: 120;
-  transition: width .4s;
+  transition: width 0.4s;
   overflow: hidden;
 
   &__links {
@@ -80,7 +81,7 @@
     background: -webkit-linear-gradient(-178deg, rgb(49, 53, 61) 0%, rgb(52, 57, 65) 100%);
     background: -ms-linear-gradient(-178deg, rgb(49, 53, 61) 0%, rgb(52, 57, 65) 100%);
     background: linear-gradient(-178deg, rgb(49, 53, 61) 0%, rgb(52, 57, 65) 100%);
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
     z-index: 1;
     height: 100%;
 
@@ -101,13 +102,15 @@
   }
 }
 
-.nav-links--v .nav-links__item, .nav-links--v .nav-links__link {
+.nav-links--v .nav-links__item,
+.nav-links--v .nav-links__link {
   display: flex;
   width: 100%;
   margin: 0;
 }
 
-.nav-links--v .nav-links__item .nav-links__item-link.active:not(.nav-links__item-locale) .nav-links__item-link, .nav-links--v .nav-links__item .nav-links__item-link.active:not(.nav-links__item-locale) .nav-links__link {
+.nav-links--v .nav-links__item .nav-links__item-link.active:not(.nav-links__item-locale) .nav-links__item-link,
+.nav-links--v .nav-links__item .nav-links__item-link.active:not(.nav-links__item-locale) .nav-links__link {
   cursor: default;
 }
 
@@ -144,8 +147,8 @@
         width: 50%;
       }
 
-      .btn-bento__el.r3.c2,
-      .btn-bento__el.r1.c2 {
+      .btn-bento__el.r1.c2,
+      .btn-bento__el.r3.c2 {
         height: 50%;
       }
 
@@ -196,7 +199,7 @@
   display: flex;
 
   &__item {
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 
     &.top-bar__menu-item {
       margin-right: 20px;
@@ -205,7 +208,7 @@
       $border: 2px;
       color: $color-white;
       background: #31353c;
-      box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+      box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
       background-clip: padding-box;
       border-left: solid $border transparent;
       border-right: solid $border transparent;
@@ -255,7 +258,7 @@
       min-height: 60px;
       padding: 0;
       cursor: pointer;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     .nav-links__item-link {
@@ -311,7 +314,7 @@
   z-index: 99;
   height: 90px;
   background: linear-gradient(0deg, rgba(31, 30, 34, 1) 0%, rgba(52, 57, 65, 1) 100%);
-  transition: all .1s ease-out;
+  transition: all 0.1s ease-out;
 
   & > * {
     display: flex;
@@ -411,9 +414,8 @@
     min-height: 40px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
     color: $color-white;
-
   }
 
   &__arrow {
@@ -421,7 +423,8 @@
   }
 }
 
-.main, .top-bar {
+.main,
+.top-bar {
   margin-left: 90px;
 }
 
@@ -478,6 +481,7 @@
     min-width: 260px;
     min-height: 50px;
     margin-top: 45px;
+
     & span {
       border-radius: 4px;
     }
@@ -502,12 +506,12 @@
     opacity: 1;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    -webkit-transition: opacity .5s, background-color 0s, width .5s;
-    -o-transition: opacity .5s, background-color 0s, width .5s;
-    transition: opacity .5s, background-color 0s, width .5s;
-    -webkit-transition-delay: .5s, .5s, 0s;
-    -o-transition-delay: .5s, .5s, 0s;
-    transition-delay: .5s, .5s, 0s;
+    -webkit-transition: opacity 0.5s, background-color 0s, width 0.5s;
+    -o-transition: opacity 0.5s, background-color 0s, width 0.5s;
+    transition: opacity 0.5s, background-color 0s, width 0.5s;
+    -webkit-transition-delay: 0.5s, 0.5s, 0s;
+    -o-transition-delay: 0.5s, 0.5s, 0s;
+    transition-delay: 0.5s, 0.5s, 0s;
   }
 
   & .swiper-pagination-bullet {
@@ -542,9 +546,8 @@
   right: 0;
 }
 
-
-.main-slider__title,
-.main-slider__btn {
+.main-slider__btn,
+.main-slider__title {
   opacity: 0;
 }
 
@@ -562,7 +565,6 @@
   opacity: 1;
   animation: fadeInLeft 1s;
 }
-
 
 .home-bg-section {
   position: relative;
@@ -585,7 +587,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
-    background-image: url(../images/bg.png);
+    background-image: url("../images/bg.png");
   }
 }
 
@@ -611,17 +613,17 @@
       margin: auto 0;
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      background-image: url(../images/jackpot-violet-band.png);
+      background-image: url("../images/jackpot-violet-band.png");
     }
   }
 
   &__block {
     width: 100%;
-    height: 120px;
+    height: 130px;
     background: $gold-gradient-background;
     border-radius: 60px;
     position: relative;
-    padding: 15px 40px;
+    padding: 10px 30px;
     color: #232328;
 
     &:after {
@@ -634,7 +636,7 @@
       top: 50%;
       transform: translateY(-50%) rotate(180deg);
       background-size: 100% 100%;
-      background-image: url(../images/jackpot-block-decor.png);
+      background-image: url("../images/jackpot-block-decor.png");
     }
 
     &:before {
@@ -647,7 +649,7 @@
       top: 50%;
       transform: translateY(-50%);
       background-size: 100% 100%;
-      background-image: url(../images/jackpot-block-decor.png);
+      background-image: url("../images/jackpot-block-decor.png");
     }
 
     & > * {
@@ -667,8 +669,7 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 36px;
 
-    &-nums {
-    }
+    &-nums {}
 
     &-curr {
       color: #232328;
@@ -784,11 +785,10 @@
 
   &__btn {
     color: $color-white;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
     padding: 5px 5px 5px 0;
 
-    &:hover {
-    }
+    &:hover {}
 
     &--active {
       color: $color-gold;
@@ -806,7 +806,7 @@
   @include violet-linear-border;
   background-color: #242429;
   border-radius: 5px;
-  box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+  box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
 
   &__inner {
     border-radius: 5px;
@@ -824,7 +824,7 @@
   padding: 15px;
   height: 100%;
   width: 108px;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 
   &:nth-child(2n) {
     &:before {
@@ -875,13 +875,13 @@
   }
 }
 
-.icon-tab-btn.icon-tab-btn--active:nth-child(2n):before,
-.icon-tab-btn.icon-tab-btn--active:nth-child(2n):after {
+.icon-tab-btn.icon-tab-btn--active:nth-child(2n):after,
+.icon-tab-btn.icon-tab-btn--active:nth-child(2n):before {
   visibility: hidden;
 }
 
 .game-card {
-  transition: background-color .2s, transform .2s, box-shadow .2s;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   transform: translateZ(0);
 
   &:hover {
@@ -891,6 +891,7 @@
       box-shadow: 5.738px 1.754px 41.28px 1.72px rgba(149, 0, 226, 0.58);
     }
   }
+
   &.game-card--sm {
     &:hover {
       transform: translate3d(0, -3px, 0);
@@ -900,6 +901,7 @@
       }
     }
   }
+
   &__body-img {
     margin-bottom: 10px;
   }
@@ -918,7 +920,7 @@
   &-card {
     width: 300px;
     margin: 0 21px 15px 0;
-    transition: background-color .2s, transform .2s, box-shadow .2s;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
     transform: translateZ(0);
 
     &:nth-child(4n) {
@@ -1026,8 +1028,8 @@
   .swiper-slide {
     transform: scale(.8);
     flex-shrink: 0;
-    opacity: .85;
-    transition: all .8s ease-out;
+    opacity: 0.85;
+    transition: all 0.8s ease-out;
     transition-property: transform, opacity, margin;
     -webkit-filter: blur(3px);
     filter: blur(4px);
@@ -1059,7 +1061,7 @@
   width: 470px;
   margin: 0 auto;
   border-radius: $border-radius-middle;
-  box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+  box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
   background-size: 100% 100%;
   padding: 15px;
 
@@ -1133,6 +1135,7 @@
     font-size: 34px;
     font-weight: 600;
     color: $color-white;
+
     & > span {
       padding-right: 5px;
     }
@@ -1206,8 +1209,8 @@
       }
     }
 
-    &-val,
-    &-separator {
+    &-separator,
+    &-val {
       color: #ffaf3d;
       font-family: 'Bebas Neue', cursive;
       font-size: 35px;
@@ -1313,7 +1316,6 @@
   background-position: center;
   width: 100%;
   //max-width: 350px;
-
   &__body {
     background-image: url("../images/promo-card-border.png");
     background-size: 100% 100%;
@@ -1368,7 +1370,7 @@
     border-radius: $border-radius-middle;
     background: $dark-gradient;
     padding: 10px 10px 30px;
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
     text-align: center;
     position: relative;
     z-index: 0;
@@ -1459,6 +1461,7 @@ img.partners-banner {
 .slider-payments {
   position: relative;
   margin-bottom: 35px;
+
   &__inner {
     height: 90px;
   }
@@ -1471,10 +1474,12 @@ img.partners-banner {
     max-height: 28px;
     width: auto;
   }
+
   .swiper-container {
     margin-left: 30px;
     margin-right: 30px;
   }
+
   .slider-button-next {
     width: 15px;
   }
@@ -1493,13 +1498,16 @@ img.partners-banner {
     height: 330px;
     background-size: cover;
     @include flex-vertical-center;
+
     &-tourney-logo {
       @include absolute-horizontal-center;
+
       &.logo--vegas {
         bottom: -385px;
       }
     }
   }
+
   &__title {
     font-size: 46px;
     line-height: initial;
@@ -1550,7 +1558,6 @@ img.partners-banner {
   }
 }
 
-
 .page-bg-section {
   background-position-y: -5px;
   background-size: cover;
@@ -1572,30 +1579,38 @@ img.partners-banner {
 
 .tournaments-list {
   padding: 70px 0;
+
   .card-tournament {
     width: inherit;
     padding: 10px;
+
     &__container {
       padding: 0 30px;
     }
+
     &__btn {
       width: 100%;
     }
+
     &__info-logo {
       min-height: 275px;
     }
   }
+
   .tournament-info {
     &__img {
       width: 34px;
       height: 34px;
+
       &-item {
         width: 18px;
       }
     }
+
     &__title {
       font-size: 28px;
     }
+
     &__board {
       &-title {
         font-size: 20px;
@@ -1603,6 +1618,7 @@ img.partners-banner {
       }
     }
   }
+
   .counter {
     &__item {
       font-size: 28px;
@@ -1611,11 +1627,14 @@ img.partners-banner {
       width: 26px;
       line-height: 44px;
     }
+
     &__purpose {
       padding-left: 6px;
     }
   }
-  .countdown__timer-val, .countdown__timer-separator {
+
+  .countdown__timer-separator,
+  .countdown__timer-val {
     font-size: 28px;
     line-height: 28px;
   }
@@ -1625,6 +1644,7 @@ img.partners-banner {
   &__info {
     padding-top: 75px;
   }
+
   .tournament-info {
     &__board {
       &-title {
@@ -1633,6 +1653,7 @@ img.partners-banner {
       }
     }
   }
+
   .counter {
     &__item {
       font-size: 60px;
@@ -1641,50 +1662,58 @@ img.partners-banner {
       width: 55px;
       line-height: 103px;
     }
+
     &__purpose {
       font-size: 50px;
     }
   }
+
   .countdown__timer {
-    &-val,
-    &-separator {
+    &-separator,
+    &-val {
       font-size: 70px;
       line-height: 70px;
     }
+
     &-label {
       font-size: 22px;
     }
   }
 }
 
-
 .table-award {
   border-radius: $border-radius-middle;
   padding: 9px;
   $border-color: #727479;
-  box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+  box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
+
   &__row {
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
     border-bottom: 1px solid $border-color;
+
     &:last-child {
       border-bottom: none;
     }
+
     & > div {
       padding-top: 9px;
       padding-bottom: 9px;
     }
   }
+
   &__num {
     min-width: 35px;
     border-right: 2px solid $border-color;
     @include flex-vertical-center;
   }
+
   &__info {
     display: flex;
     align-items: center;
     flex-grow: 1;
+
     &-award {
       padding-right: 25px;
       padding-left: 25px;
@@ -1692,24 +1721,28 @@ img.partners-banner {
   }
 }
 
-
 .tourney-games {
   margin-left: -9px;
   margin-right: -9px;
-  &>div {
+
+  & > div {
     padding-left: 9px;
     padding-right: 9px;
   }
+
   .game-card {
     margin-bottom: 18px;
+
     &__body-img-wrap {
       border-radius: $border-radius-middle;
       margin-bottom: 8px;
     }
+
     &__body-img {
       border-radius: $border-radius-middle;
       margin-bottom: 0;
     }
+
     &:hover {
       transform: translate3d(0, -3px, 0);
     }
@@ -1718,16 +1751,18 @@ img.partners-banner {
 
 .table-winners {
   &__inner {
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.74);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.74);
     width: 100%;
     border-radius: $border-radius-middle;
     padding: 0 8px 6px;
     display: table;
   }
+
   &__row {
     padding-top: 8px;
     padding-bottom: 8px;
     display: table-row;
+
     &.table-winners__row--head {
       .table-winners__col {
         height: 55px;
@@ -1735,42 +1770,51 @@ img.partners-banner {
       }
     }
   }
+
   &__col {
     font-size: 22px;
     height: 70px;
     display: table-cell;
     vertical-align: middle;
     padding: 0 10px;
+
     &:nth-child(1) {
       width: 5%;
       padding-left: 30px;
     }
+
     &:nth-child(2) {
       width: 35%;
       padding-left: 32px;
     }
+
     &:nth-child(3) {
       width: 20%;
     }
+
     &:nth-child(4) {
       white-space: nowrap;
       width: 10%;
       padding-right: 30px;
     }
   }
+
   &__user {
     position: relative;
     z-index: 1;
     @include flex-vertical-center;
+
     &-photo {
       width: 50px;
       height: 50px;
+
       &-img {
         border-radius: 50%;
         width: 100%;
         height: 100%;
       }
     }
+
     &-login {
       padding-left: 16px;
       color: $color-gold;
@@ -1781,19 +1825,21 @@ img.partners-banner {
 
 .regulations-list {
   .ul {
-    &>li {
+    & > li {
       position: relative;
       padding-left: 42px;
       font-size: 22px;
       letter-spacing: -.5px;
       font-weight: 600;
       margin-bottom: 22px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
     &.ul--check {
-      &>li {
+      & > li {
         &:before {
           content: "";
           position: absolute;
@@ -1807,9 +1853,11 @@ img.partners-banner {
         }
       }
     }
+
     &.ul--point {
-      &>li {
+      & > li {
         padding-left: 28px;
+
         &:before {
           content: "";
           position: absolute;
@@ -1828,20 +1876,24 @@ img.partners-banner {
 
 .bonus-card {
   margin-bottom: 18px;
+
   &__inner {
     border-radius: $border-radius-middle;
     padding: 6px;
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
     background: #30333b;
     position: relative;
   }
+
   &__link {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   &__photo {
     position: relative;
+
     &-item {
       height: 150px;
       border-radius: $border-radius-middle;
@@ -1849,6 +1901,7 @@ img.partners-banner {
       background-size: cover;
     }
   }
+
   &__info {
     position: absolute;
     top: 10px;
@@ -1858,15 +1911,18 @@ img.partners-banner {
     background-color: #232428;
     border-radius: $border-radius-min;
     cursor: pointer;
+
     &-inner {
       border-radius: $border-radius-min;
       @include flex-all-center;
-      transition: .3s;
+      transition: 0.3s;
+
       &:hover {
         background-color: #3b3d44;
       }
     }
   }
+
   &__body {
     padding: 15px 0;
   }
@@ -1881,6 +1937,7 @@ img.partners-banner {
 .presents-block {
   position: relative;
   max-width: 1095px;
+
   &:before {
     content: "";
     position: absolute;
@@ -1891,6 +1948,7 @@ img.partners-banner {
     background: url("../images/birthday.png") no-repeat;
     z-index: 5;
   }
+
   &:after {
     content: "";
     position: absolute;
@@ -1904,46 +1962,54 @@ img.partners-banner {
     background-size: 100% 100%;
     z-index: 5;
   }
+
   &__inner {
     padding: 60px 460px 60px 80px;
     width: 100%;
     height: auto;
     border-radius: $border-radius-middle;
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
   }
 }
 
 .presents-table {
   display: flex;
   flex-direction: column;
+
   &__row {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 25px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   &__col {
     &:nth-child(1) {
       padding-right: 13px;
     }
+
     &:nth-child(2) {
       width: 100%;
       overflow: hidden;
       position: relative;
     }
+
     &:nth-child(3) {
       min-width: 100px;
       padding-left: 12px;
     }
+
     &-dashed {
       width: 100%;
       height: 1px;
       overflow: hidden;
       position: absolute;
       bottom: 6px;
+
       &:before {
         content: "";
         position: absolute;
@@ -1960,9 +2026,11 @@ img.partners-banner {
   .page__banner {
     align-items: flex-start;
   }
+
   .page__title {
     padding: 35px 0 12px;
   }
+
   .page-bg-section {
     padding-top: 0;
   }
@@ -1971,31 +2039,36 @@ img.partners-banner {
 .user-block {
   .bb-gold__inner {
     border: solid 1px transparent;
+
     &:before {
       margin: -1px;
     }
   }
+
   &__inner {
     border-radius: $border-radius-middle;
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
   }
+
   .bb-gold__inner {
     background: #292a30;
     background-clip: padding-box;
   }
+
   &__data {
     position: relative;
     z-index: 1;
   }
+
   &__photo {
     width: 70px;
     height: 70px;
-    &-img {
 
-    }
+    &-img {}
   }
+
   &__bonus-val {
     font-weight: bold;
     background-image: linear-gradient(205deg, rgba(235,177,123,1) 0%, rgba(195,150,107,1) 27%, rgba(228,182,127,1) 47%, rgba(254,217,144,1) 67%, rgba(255,255,255,1) 86%, rgba(252,211,132,1) 100%);
@@ -2003,21 +2076,26 @@ img.partners-banner {
     -webkit-background-clip: text;
     background-clip: text;
   }
+
   &__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   &__action {
     display: flex;
     justify-content: flex-end;
+
     &-link {
       display: block;
       margin-right: 20px;
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     &-icon {
       width: 20px;
       height: auto;
@@ -2026,12 +2104,13 @@ img.partners-banner {
 }
 
 .profile-tabs {
-  &__wrapper  {
+  &__wrapper {
     position: relative;
     top: -60px;
     z-index: 1;
-    box-shadow: 0px 7px 13px 0px rgba(14, 14, 14, 0.42);
+    box-shadow: 0 7px 13px 0 rgba(14, 14, 14, 0.42);
   }
+
   &__inner {
     background: $dark-gradient;
     @include violet-linear-border;
@@ -2044,16 +2123,19 @@ img.partners-banner {
     display: flex;
     justify-content: space-between;
   }
+
   &__form {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
   }
+
   &__title {
     position: relative;
     font-weight: bold;
     font-size: 36px;
   }
+
   &__notice {
     font-weight: 500;
     position: absolute;
@@ -2061,15 +2143,18 @@ img.partners-banner {
     left: 0;
     width: max-content;
     z-index: 2;
+
     &-link {
       color: #d2a575;
     }
   }
+
   &__input-wrap {
     border-radius: $border-radius-min;
     width: 100%;
     margin: 0 30px 0 20px;
   }
+
   &__input {
     border-radius: $border-radius-min;
     width: 100%;
@@ -2080,15 +2165,18 @@ img.partners-banner {
     background-clip: padding-box;
     font-size: 16px;
     color: #ffffff;
+
     &::placeholder {
       color: #4f4e4e;
     }
-    &:focus,
-    &:active {
+
+    &:active,
+    &:focus {
       outline: none;
       border: none;
     }
   }
+
   &__btn {
     padding: 0 30px;
     white-space: nowrap;
@@ -2111,6 +2199,7 @@ img.partners-banner {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
     &:after {
       content: "";
       position: absolute;
@@ -2119,25 +2208,30 @@ img.partners-banner {
       height: 757px;
       width: 770px;
       z-index: 1;
-      background: url(../images/reel.png) no-repeat;
+      background: url("../images/reel.png") no-repeat;
     }
   }
+
   .bb-gold__inner {
     border: solid 5px transparent;
+
     &:before {
       margin: -5px;
     }
   }
+
   .tournament-info__board {
     &-title {
       font-size: 41px;
     }
   }
+
   &__col {
     &:nth-child(2) {
       margin: 0 70px 0 60px;
     }
   }
+
   .counter {
     &__item {
       width: 50px;
@@ -2145,16 +2239,20 @@ img.partners-banner {
       font-size: 52px;
       line-height: 80px;
     }
+
     &__purpose {
       font-size: 34px;
     }
   }
-  .countdown__timer-val, .countdown__timer-separator {
+
+  .countdown__timer-separator,
+  .countdown__timer-val {
     font-size: 56px;
     line-height: 56px;
     letter-spacing: 2px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.81);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.81);
   }
+
   .countdown__timer-label {
     font-size: 22px;
   }
@@ -2164,17 +2262,19 @@ img.partners-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &__count {
     position: relative;
     font-family: 'Bebas Neue', cursive;
     font-size: 90px;
     line-height: 80px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.81);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.81);
     color: #ffaf3d;
     width: 100%;
     z-index: 3;
     margin-bottom: 25px;
     @include flex-all-center;
+
     &:before {
       content: "";
       position: absolute;
@@ -2195,39 +2295,46 @@ img.partners-banner {
 }
 
 .profile-tabs {
-  &__head {
-  }
+  &__head {}
 }
 
 .main-tabs {
   $border: 1px solid #41444a;
+
   &__tabs {
     display: flex;
     position: relative;
     z-index: 1;
-    &.tabs--4c >* {
+
+    &.tabs--4c > * {
       width: 25%;
     }
   }
+
   &__item {
     height: 62px;
     @include flex-vertical-center;
     border-bottom: $border;
+
     &:first-child {
       border-top-left-radius: 4px;
     }
+
     &:last-child {
       border-top-right-radius: 4px;
     }
+
     &--active {
       background: linear-gradient(325deg, rgba(151,42,230,1) 0%, rgba(98,111,191,1) 100%);
       border: 1px solid #a03ee8;
     }
+
     &-inner {
       @include flex-all-center;
       flex: 0 0 100%;
       height: 70%;
       position: relative;
+
       &:before {
         content: "";
         position: absolute;
@@ -2239,9 +2346,11 @@ img.partners-banner {
       }
     }
   }
+
   &__content {
     padding: 25px;
     display: none;
+
     &.main-tabs__content--active {
       display: block;
     }
@@ -2253,24 +2362,31 @@ img.partners-banner {
   align-items: center;
   position: relative;
   z-index: 1;
-  &>div {
+
+  & > div {
     padding-right: 10px;
+
     &:nth-child(1) {
       flex: 0 0 160px;
     }
+
     &:nth-child(2) {
       flex: 0 0 18%;
     }
+
     &:nth-child(3) {
       flex: 0 0 20%;
     }
+
     &:nth-child(4) {
       flex: 1 1 auto;
     }
+
     &:last-child {
       padding-right: 0;
     }
   }
+
   &__curr {
     font-weight: bold;
     font-size: 54px;
@@ -2279,15 +2395,18 @@ img.partners-banner {
     -webkit-background-clip: text;
     background-clip: text;
   }
+
   &__count {
     font-size: 36px;
     font-weight: 600;
   }
+
   &__limits {
     font-size: 24px;
     font-weight: 600;
     line-height: 45px;
   }
+
   &__hint {
     font-size: 14px;
     color: #959595;
@@ -2299,6 +2418,7 @@ img.partners-banner {
   z-index: 1;
   margin-bottom: 24px;
   @include flex-vertical-center;
+
   &__count {
     margin-right: 10px;
     width: 44px;
@@ -2307,44 +2427,15 @@ img.partners-banner {
     background-clip: padding-box;
     @include flex-all-center;
   }
+
   .circle-gold-linear {
     border: 1px solid transparent;
+
     &:before {
       margin: -1px;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
   margin-left: 90px;
@@ -2404,7 +2495,7 @@ img.partners-banner {
   &__link {
     font-size: 16px;
     color: #6d778e;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       color: $color-white;
@@ -2415,11 +2506,4 @@ img.partners-banner {
 .footer-copyright {
   font-size: 14px;
 }
-
-
-
-
-
-
-
 @import 'media';
