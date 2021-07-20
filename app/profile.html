@@ -154,11 +154,13 @@
             <div class="page__banner" style="background-image: url('images/profile/profile-banner.png')">
                 <div class="container">
                     <div class="page__title font-bold">Личный кабинет</div>
+                </div>
+                <div class="container mf-container">
                     <div class="user-block bb-gold">
                         <div class="user-block__inner bb-gold__inner">
                             <div class="user-block__left">
                                 <div class="user-block__data d-flex align-items-center">
-                                    <div class="user-block__photo photo--circle-gradient mr-4">
+                                    <div class="user-block__photo photo--circle-gradient mr-sm-4 mr-2">
                                         <img class="user-block__photo-img" src="images/ava4.png" alt="">
                                     </div>
                                     <div class="user-block__info d-flex flex-column justify-content-between font-bold">
@@ -190,37 +192,39 @@
                 </div>
             </div>
             <div class="page-bg-section" style="background-image: url('images/profile/profile-bg.png')">
-                <div class="container">
+                <div class="container mf-container">
                     <section class="profile-tabs">
                         <div class="profile-tabs__wrapper">
                             <div class="profile-tabs__inner">
                                 <div class="main-tabs">
                                     <div class="main-tabs__tabs tabs--4c">
-                                        <a class="main-tabs__item font-20" href="#tab-balance">
+                                        <a class="main-tabs__item main-tabs__item--active font-20" href="#tab-balance">
                                             <span class="main-tabs__item-inner">Баланс</span>
                                         </a>
                                         <a class="main-tabs__item font-20" href="#tab-history">
                                             <span class="main-tabs__item-inner">История</span>
                                         </a>
-                                        <a class="main-tabs__item main-tabs__item--active font-20" href="#tab-settings">
+                                        <a class="main-tabs__item font-20" href="#tab-settings">
                                             <span class="main-tabs__item-inner">Настройки</span>
                                         </a>
                                         <a class="main-tabs__item font-20" href="#tab-security">
                                             <span class="main-tabs__item-inner">Безопасность</span>
                                         </a>
                                     </div>
-                                    <div class="main-tabs__content" id="tab-balance">
+                                    <div class="main-tabs__content main-tabs__content--active" id="tab-balance">
                                         <div class="profile-balance">
                                             <div class="profile-balance__row">
                                                 <div class="profile-balance__curr">$</div>
                                             </div>
-                                            <div class="profile-balance__row">
-                                                <div class="profile-balance__count">0</div>
-                                                <div class="profile-balance__hint">баланс</div>
-                                            </div>
-                                            <div class="profile-balance__row">
-                                                <div class="profile-balance__count">0</div>
-                                                <div class="profile-balance__hint">доступно к выводу</div>
+                                            <div class="profile-balance__row--cash">
+                                                <div class="profile-balance__row">
+                                                    <div class="profile-balance__count">0</div>
+                                                    <div class="profile-balance__hint">баланс</div>
+                                                </div>
+                                                <div class="profile-balance__row">
+                                                    <div class="profile-balance__count">0</div>
+                                                    <div class="profile-balance__hint">доступно к выводу</div>
+                                                </div>
                                             </div>
                                             <div class="profile-balance__row">
                                                 <div class="profile-balance__limits">без ограничений</div>
@@ -231,34 +235,371 @@
                                             </button>
                                         </div>
                                     </div>
-
                                     <div class="main-tabs__content" id="tab-history">
-                                        <h1 class="mx-auto d-block text-center p-3">Контент 2</h1>
-                                    </div>
-                                    <div class="main-tabs__content main-tabs__content--active" id="tab-settings">
-                                        <div class="personal-data">
-                                            <form class="personal-data__form">
-                                                <div class="form-step">
-                                                    <div class="form-step__count circle-gold-linear" style="height: 50px;width: 50px">
-                                                        <div class="form-step__count-item font-bold font-24">1</div>
+                                        <div class="history">
+                                            <div class="history-tabs tabs-block">
+                                                <div class="history-tabs__links tabs-block__links tabs--violet">
+                                                    <div class="history-tabs__links-item tab-link active">Операции</div>
+                                                    <div class="history-tabs__links-item tab-link">Ставки</div>
+                                                    <div class="history-tabs__links-item tab-link">Бонусы</div>
+                                                    <div class="history-tabs__links-item tab-link">Ставки на спорт</div>
+                                                </div>
+                                                <div class="history-tabs__content tabs-block__content">
+                                                    <div class="history-tabs__content-item tab-content active">
+                                                        <div class="font-18">Не найдено ни одной операции ввода/вывода средств.1</div>
+                                                        <button class="history-cashier-btn btn btn--default btn--purple btn--border-gold">Касса</button>
                                                     </div>
-                                                    <div class="form-step__title font-24 font-bold font-color-gold">
-                                                        Личные данные
+                                                    <div class="history-tabs__content-item tab-content">
+                                                        <div class="font-18">Не найдено ни одной операции ввода/вывода средств.2</div>
+                                                        <button class="history-cashier-btn btn btn--default btn--purple btn--border-gold">Касса</button>
+                                                    </div>
+                                                    <div class="history-tabs__content-item tab-content">
+                                                        <div class="font-18">Не найдено ни одной операции ввода/вывода средств.3</div>
+                                                        <button class="history-cashier-btn btn btn--default btn--purple btn--border-gold">Касса</button>
+                                                    </div>
+                                                    <div class="history-tabs__content-item tab-content">
+                                                        <div class="font-18">Не найдено ни одной операции ввода/вывода средств.4</div>
+                                                        <button class="history-cashier-btn btn btn--default btn--purple btn--border-gold">Касса</button>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-tabs__content" id="tab-settings">
+                                        <div class="personal-data">
+                                            <form class="personal-data__form">
+                                                <div class="form-step form-step--bb">
+                                                    <div class="form-step__issue">
+                                                        <div class="form-step__count circle-gold-linear">
+                                                            <div class="form-step__count-item font-bold font-24">1</div>
+                                                        </div>
+                                                        <div class="form-step__title font-24 font-bold font-color-gold">
+                                                            Личные данные
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-block form-block--2">
+                                                        <div class="form-block__el">
+                                                            <div class="label form-left-space">Ваш никнейм</div>
+                                                            <div class="input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default" type="text"
+                                                                       placeholder="Fakename34">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el">
+                                                            <div class="label form-left-space">Ваш телефон</div>
+                                                            <div class="input-tel-wrap input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default" type="tel"
+                                                                       placeholder="+73239300084"
+                                                                       style="padding-right: 160px">
+                                                                <span class="input-tel-wrap__confirm">Подтвердить</span>
+                                                                <span class="form-error">Внимание! Ваш телефон не подтвержден!</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-block pt-4 form-left-space">
+                                                        <div class="form-block__el">
+                                                            <div class="label">Ваш e-mail</div>
+                                                            <div class="checked-email">
+                                                                <img class="checked-email__icon"
+                                                                     src="images/check-success.png" alt="">
+                                                                <div class="checked-email__email font-18 font-bold">
+                                                                    fakemail@gmail.com
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-step form-step--user-data form-left-space">
+                                                    <div class="title-warning font-18 font-bold pb-md-3 pb-2">Внимание!</div>
+                                                    <div class="font-18 fw-400">После сохранения данных информация в поле
+                                                        станет недоступна для редактирования!
+                                                        <br>
+                                                        Для внесения изменений обратитесь
+                                                        <a class="support-link" href="javascript:void(0)">
+                                                            в службу поддержки.
+                                                        </a>
+                                                    </div>
+                                                    <div class="form-block user-data-block">
+                                                        <div class="form-block__el">
+                                                            <div class="label">Имя</div>
+                                                            <div class="blocked-data">
+                                                                <img class="blocked-data__icon" src="images/lock.png" alt="">
+                                                                <div class="blocked-data__text font-18 font-bold">Fake</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el">
+                                                            <div class="label">Фамилия</div>
+                                                            <div class="blocked-data">
+                                                                <img class="blocked-data__icon" src="images/lock.png" alt="">
+                                                                <div class="blocked-data__text font-18 font-bold">Name</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el">
+                                                            <div class="label">Дата рождения</div>
+                                                            <div class="blocked-data">
+                                                                <img class="blocked-data__icon" src="images/lock.png" alt="">
+                                                                <div class="blocked-data__text font-18 font-bold">11 октября 1997</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el">
+                                                            <div class="label">Страна</div>
+                                                            <select name="country" id="">
+                                                                <option value="1">Россия</option>
+                                                                <option value="2">Украина</option>
+                                                                <option value="3">Беларуссия</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-step form-left-space">
+                                                    <div class="title-border-right font-bold font-24">
+                                                        Подписка на рассылки
+                                                    </div>
+                                                    <div class="switch-block">
+                                                        <div class="switch">
+                                                            <input id="switch-1" type="checkbox" class="switch-input" checked>
+                                                            <label for="switch-1" class="switch-label">Switch</label>
+                                                        </div>
+                                                        <div class="switch-block__text">Получать системные уведомления</div>
+                                                        <div class="prompt circle-gold-linear">i</div>
+                                                    </div>
+                                                    <div class="switch-block">
+                                                        <div class="switch">
+                                                            <input id="switch-2" type="checkbox" class="switch-input">
+                                                            <label for="switch-2" class="switch-label">Switch</label>
+                                                        </div>
+                                                        <div class="switch-block__text">Получать письма с акциями и подарками</div>
+                                                        <div class="prompt circle-gold-linear">i</div>
+                                                    </div>
+                                                    <div class="switch-block switch-block--last">
+                                                        <div class="switch">
+                                                            <input id="switch-3" type="checkbox" class="switch-input">
+                                                            <label for="switch-3" class="switch-label">Switch</label>
+                                                        </div>
+                                                        <div class="switch-block__text">Получать SMS уведомления</div>
+                                                        <div class="prompt circle-gold-linear">i</div>
+                                                    </div>
+                                                    <div class="title-border-right font-bold font-24">
+                                                        Управление бонусами
+                                                    </div>
+                                                    <div class="switch-block switch-block--last">
+                                                        <div class="switch">
+                                                            <input id="switch-4" type="checkbox" class="switch-input">
+                                                            <label for="switch-4" class="switch-label">Switch</label>
+                                                        </div>
+                                                        <div class="switch-block__text">Показать бонусы</div>
+                                                        <div class="prompt circle-gold-linear">i</div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-data__form-action">
+                                                    <button class="btn btn--default btn--purple btn--border-gold">Сохранить</button>
+                                                </div>
                                             </form>
+                                            <div class="form-step">
+                                                <div class="form-step__issue">
+                                                    <div class="form-step__count circle-gold-linear">
+                                                        <div class="form-step__count-item font-bold font-24">2</div>
+                                                    </div>
+                                                    <div class="form-step__title font-24 font-bold font-color-gold">
+                                                        Сохраненные способы пополнения и вывода
+                                                    </div>
+                                                </div>
+                                                <div class="form-block">
+                                                    <div class="form-block__el">
+                                                        <div class="form-left-space font-18">У вас нет сохраненных способов пополнения и вывода</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-step">
+                                                <div class="form-step__issue">
+                                                    <div class="form-step__count circle-gold-linear">
+                                                        <div class="form-step__count-item font-bold font-24">3</div>
+                                                    </div>
+                                                    <div class="form-step__title font-24 font-bold font-color-gold">
+                                                        Социальные сети
+                                                    </div>
+                                                </div>
+                                                <div class="form-block">
+                                                    <div class="form-block__el linked-accs">
+                                                        <div class="form-left-space font-18">Аккаунты в социальных сетях, привязанные к вашей учётной записи:</div>
+                                                        <div class="linked-accs__list">
+                                                            <div class="linked-accs__item circle-gold-linear">
+                                                                <img class="svg linked-accs__icon" src="images/google-plus.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <img class="linked-accs__remove" src="images/close.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-step">
+                                                <div class="form-step__issue">
+                                                    <div class="form-step__count circle-gold-linear">
+                                                        <div class="form-step__count-item font-bold font-24">4</div>
+                                                    </div>
+                                                    <div class="form-step__title font-24 font-bold font-color-gold">
+                                                        Верификация документов
+                                                    </div>
+                                                </div>
+                                                <div class="form-block">
+                                                    <div class="form-block__el upload-docs">
+                                                        <select class="upload-docs__select" name="docs">
+                                                            <option value="1">Выберите тип документа</option>
+                                                            <option value="2">Выберите тип документа</option>
+                                                            <option value="3">Выберите тип документа</option>
+                                                        </select>
+                                                        <div class="upload-docs__upload">
+                                                            <span class="upload-docs__upload-title">Загрузить файл</span>
+                                                            <input class="upload-docs__input" type="file">
+                                                        </div>
+                                                        <div class="upload-docs__types">
+                                                            <span>jpg </span>
+                                                            <span>png, </span>
+                                                            <span>pdf</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="main-tabs__content" id="tab-security">
-                                        <h1 class="mx-auto d-block text-center p-3">Контент 4</h1>
+                                        <div class="profile-security">
+                                            <form class="profile-security__form-pass">
+                                                <div class="form-step form-step--bb">
+                                                    <div class="form-step__issue">
+                                                        <div class="form-step__count circle-gold-linear">
+                                                            <div class="form-step__count-item font-bold font-24">1</div>
+                                                        </div>
+                                                        <div class="form-step__title font-24 font-bold font-color-gold">
+                                                            Изменить пароль
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-block pass-block row">
+                                                        <div class="form-block__el col-md-4 mb-md-0 mb-3 pass-block__inner">
+                                                            <div class="input-wrap pass-block__input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default input-pass" type="password" placeholder="Новый пароль">
+                                                                <img class="svg pass-icon pass-icon-open" src="images/eye.svg" alt="" >
+                                                                <img class="svg pass-icon pass-icon-close" src="images/close-eye.svg" alt="" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el col-md-4 mb-md-0 mb-3 pass-block__inner">
+                                                            <div class="input-wrap pass-block__input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default input-pass" type="password" placeholder="Новый пароль">
+                                                                <img class="svg pass-icon pass-icon-open" src="images/eye.svg" alt="" >
+                                                                <img class="svg pass-icon pass-icon-close" src="images/close-eye.svg" alt="" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-block__el col-md-4 pass-block__inner">
+                                                            <div class="input-wrap pass-block__input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default input-pass" type="password" placeholder="Новый пароль">
+                                                                <img class="svg pass-icon pass-icon-open" src="images/eye.svg" alt="" >
+                                                                <img class="svg pass-icon pass-icon-close" src="images/close-eye.svg" alt="" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-security__form-action d-flex justify-content-center pt-sm-4 pt-3">
+                                                        <button class="btn btn--default btn--purple btn--border-gold">Изменить пароль</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="two-auth">
+                                                <div class="form-step form-step--bb">
+                                                    <div class="form-step__issue">
+                                                        <div class="form-step__count circle-gold-linear">
+                                                            <div class="form-step__count-item font-bold font-24">2</div>
+                                                        </div>
+                                                        <div class="form-step__title font-24 font-bold font-color-gold">
+                                                            Настройка двухфакторной авторизации
+                                                        </div>
+                                                    </div>
+                                                    <div class="two-auth-block form-left-space pt-2">
+                                                        <div class="two-auth-block__left">
+                                                            <div class="qr-block bb-gold">
+                                                                <div class="qr-block__inner bb-gold__inner">
+                                                                    <img class="qr-block__item" src="images/qr.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="mobile-apps-block d-flex">
+                                                                <a class="app-link bb-gold" href="javascript:void(0)">
+                                                                    <div class="app-link__inner bb-gold__inner">
+                                                                        <img class="app-link__img" src="images/app-store.png" alt="">
+                                                                    </div>
+                                                                </a>
+                                                                <a class="app-link bb-gold" href="javascript:void(0)">
+                                                                    <div class="app-link__inner bb-gold__inner">
+                                                                        <img class="app-link__img" src="images/google-play.png" alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="two-auth-block__right">
+                                                            <div class="two-auth-block__text font-18">
+                                                                <div>
+                                                                    Настройте двухэтапную аутентификацию и создайте новую преграду для злоумышленников!
+                                                                </div>
+                                                                <div>
+                                                                    Используйте Google Authenticator на своем мобильном устройстве. Сканируйте QR-код, чтобы начать генерировать одноразовые пароли, или введите секретное слово вручную.
+                                                                </div>
+                                                            </div>
+                                                            <div class="secret-word">
+                                                                <span class="secret-word__label font-18">Секретное слово</span>
+                                                                <div class="secret-word__inner" id="secret-word">6tkrr7vuiijd4c7qjspio73e</div>
+                                                                <span class="secret-word__copy font-18">Скопировать</span>
+                                                            </div>
+                                                            <div class="input-wrap gold-input-linear-wrap">
+                                                                <input class="input-default" type="text" placeholder="Код аутентификации">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="two-auth__action d-flex w-100 justify-content-center pt-sm-4 pt-3">
+                                                        <button class="two-auth__action-btn btn btn--default btn--purple btn--border-gold">Подтвердить</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-step">
+                                                    <div class="form-step__issue">
+                                                        <div class="form-step__count circle-gold-linear">
+                                                            <div class="form-step__count-item font-bold font-24">3</div>
+                                                        </div>
+                                                        <div class="form-step__title font-24 font-bold font-color-gold">
+                                                            История активности
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-block">
+                                                        <div class="form-block__el activity form-left-space">
+                                                            <div class="activity__list">
+                                                                <div class="activity__item">
+                                                                    <div class="activity__icon-wrap">
+                                                                        <img class="activity__icon" src="images/desktop-icon.png" alt="">
+                                                                    </div>
+                                                                    <div class="activity__info">
+                                                                        <div class="activity__device font-18">UAMac OS 10.13.6  Chrome 85  35.127.74.94</div>
+                                                                        <span class="activity__time font-14">6 часов назад</span>
+                                                                        <span class="activity__active font-14">Активный сейчас</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="activity__item">
+                                                                    <div class="activity__icon-wrap">
+                                                                        <img class="activity__icon" src="images/mobile-icon.png" alt="">
+                                                                    </div>
+                                                                    <div class="activity__info">
+                                                                        <div class="activity__device font-18">UAMac OS 10.13.6  Chrome 85  35.127.74.94</div>
+                                                                        <span class="activity__time font-14">6 часов назад</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-
+                </div>
+                <div class="container">
                     <section class="block-pb-space">
-                        <div class="big-promo pb-3">
+                        <div class="big-promo pb-sm-3 pb-5">
                             <div class="big-promo__inner">
                                 <div class="big-promo__title">
                                     Есть промо-код?
@@ -283,7 +624,7 @@
                         <div class="middle-title text-center">Бонус</div>
                         <div class="bonuses-list">
                             <div class="bonuses-list__inner row">
-                                <div class="col-md-3 bonus-card">
+                                <div class="col-lg-3 col-6 bonus-card">
                                     <a class="bonus-card__link" href="javascript:void(0);">
                                         <div class="bonus-card__inner">
                                             <div class="bonus-card__photo bb-gold">
@@ -302,7 +643,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 bonus-card">
+                                <div class="col-lg-3 col-6 bonus-card">
                                     <a class="bonus-card__link" href="javascript:void(0);">
                                         <div class="bonus-card__inner">
                                             <div class="bonus-card__photo bb-gold">
@@ -321,7 +662,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 bonus-card">
+                                <div class="col-lg-3 col-6 bonus-card">
                                     <a class="bonus-card__link" href="javascript:void(0);">
                                         <div class="bonus-card__inner">
                                             <div class="bonus-card__photo bb-gold">
@@ -340,7 +681,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 bonus-card">
+                                <div class="col-lg-3 col-6 bonus-card">
                                     <a class="bonus-card__link" href="javascript:void(0);">
                                         <div class="bonus-card__inner">
                                             <div class="bonus-card__photo bb-gold">
@@ -432,7 +773,7 @@
                         <div class="middle-title text-center">Турниры</div>
                         <div class="tournaments-list">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-xl-4 col-lg-6 col-12">
                                     <div class="card-tournament"
                                          style="background-image: url(images/LasVegas-card.png)">
                                         <div class="card-tournament__inner">
@@ -512,7 +853,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-xl-4 col-lg-6 col-12">
                                     <div class="card-tournament"
                                          style="background-image: url(images/LasVegas-card.png)">
                                         <div class="card-tournament__inner">
@@ -593,7 +934,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-xl-4 col-lg-6 col-12">
                                     <div class="card-tournament" style="background-image: url(images/atlanta-card.png)">
                                         <div class="card-tournament__inner">
                                             <div class="card-tournament__info">

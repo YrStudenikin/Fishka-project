@@ -1,11 +1,10 @@
 @media (max-width: 1500px) {
-  body {
-    font-size: 16px;
-  }
+  body {font-size: 16px;}
+  .font-24 {font-size: 22px;}
 
   .quick-bar,
   .quick-bar .nav-links {
-    width: 60px;
+    width: 75px;
   }
 
   .main {
@@ -14,7 +13,7 @@
 
   .main,
   .top-bar {
-    margin-left: 60px;
+    margin-left: 75px;
   }
 
   .menu-opened .quick-bar,
@@ -47,7 +46,7 @@
       .nav-links__link {
         font-size: 18px;
         min-height: 7vh;
-        width: 60px;
+        width: 75px;
       }
 
       .nav-links__item-link {
@@ -81,7 +80,7 @@
       padding-top: 70px;
 
       .nav-links__link-icon {
-        width: 3vh;
+        width: 2.6vh;
         height: auto;
         margin-top: -3px;
       }
@@ -101,12 +100,12 @@
   }
 
   .btn-bento {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
 
     &__inner {
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
     }
   }
 
@@ -149,7 +148,7 @@
   }
 
   .main-slider {
-    height: 700px;
+    height: 640px;
 
     &__slide {
       align-items: flex-start;
@@ -177,11 +176,69 @@
       margin-top: 25px;
     }
   }
+  .main-slider__container .slider__pagination {
+    bottom: 140px;
+    max-width: 1180px;
+  }
+  .jackpot {
+    padding-right: 170px;
+    &__content {
+      width: 365px;
+      &:before {
+        top: 15px;
+        width: 1020px;
+        height: 100px;
+      }
+    }
+    &__block {
+      height: auto;
+    }
+    &__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    &__price {
+      font-size: 28px;
+      &-curr {
+        font-size: 32px;
+        line-height: 31px;
+      }
+    }
+  }
   .game-categories__card {
     &-outer {
-      width: 120px;
-      height: 120px;
+      width: 170px;
+      height: 170px;
     }
+    &-img {
+      max-width: 70px;
+      height: auto;
+    }
+  }
+
+  .presents-block {
+    max-width: 100%;
+    &:before {
+      display: none;
+    }
+    &__inner {
+      padding: 40px;
+    }
+  }
+
+  .page-bg-section {
+    background: $dark-gradient;
+  }
+  .presents .middle-title {
+    padding-bottom: 15px;
+  }
+  .middle-title {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-left: 75px;
   }
 }
 
@@ -218,17 +275,348 @@
       padding-left: 6px;
     }
   }
+
+  .card-tournament {
+    width: 420px;
+    padding: 10px;
+
+    &__container {
+      padding: 0 30px;
+    }
+    &__inner {
+      padding: 0 3px;
+    }
+    &__info {
+      &-logo {
+        margin-bottom: -25px;
+        top: -10px;
+        max-width: 300px;
+      }
+    }
+
+    &__btn-wrap {
+      height: 90px;
+    }
+    &__btn {
+      width: 190px;
+      height: 45px;
+    }
+  }
+
+  .tournament-info {
+    &__img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      &-item {
+        width: 15px;
+      }
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__boards {
+      padding-top: 20px;
+    }
+    &__board {
+      &-title {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .counter {
+    &__item {
+      font-size: 26px;
+      margin-right: 3px;
+      height: 40px;
+      width: 26px;
+      line-height: 40px;
+    }
+    &__spacer {
+      width: 3px;
+    }
+    &__purpose {
+      padding-left: 8px;
+    }
+  }
+
+  .countdown {
+    &__timer {
+      &-item {
+        &.timer-item__date {
+          padding-right: 3px;
+        }
+      }
+      &-separator,
+      &-val {
+        color: #ffaf3d;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 26px;
+        line-height: 35px;
+      }
+      &-label {
+        font-size: 12px;
+      }
+    }
+  }
+  .advantage-card__inner {
+    min-height: 220px;
+  }
 }
+
+@media (max-width: 1200px) {
+  .font-28 {font-size: 25px;}
+  .font-23 {font-size: 20px}
+  .font-18 {font-size: 16px;}
+
+  .game-categories {
+    margin: 50px 0;
+    &__wrap {
+    }
+    &__card {
+      padding: 0 20px;
+      &-item {
+        width: 130px;
+        height: 130px;
+      }
+      &-outer {
+        width: 100%;
+        height: 100%;
+      }
+      &-img {
+        max-width: 50px;
+      }
+    }
+  }
+  .slider-tournaments {
+    margin-bottom: 30px;
+  }
+  .block-pb-space {
+    padding-bottom: 45px;
+  }
+  .round-card {
+    padding: 4px;
+    &.rc--border-gold {
+      border: solid 2px transparent;
+      &:before {
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        z-index: 0;
+        margin: 2px;
+      }
+    }
+  }
+  .big-title {
+    font-size: 50px;
+    padding-bottom: 25px;
+  }
+  .slider-button-next, .slider-button-prev {
+    width: 20px;
+  }
+  .advantages .big-title {
+    margin-bottom: 60px;
+  }
+  .page__banner {
+    height: 220px;
+  }
+  .page__title {
+    font-size: 36px;
+  }
+  .page-bg-section {
+    padding-top: 35px;
+  }
+  .page__banner-tourney-logo.logo--vegas {
+    bottom: -255px;
+    max-width: 600px;
+  }
+  .single-tournament .tournament-info__board-title {
+    font-size: 35px;
+  }
+  .single-tournament .counter__item {
+    font-size: 40px;
+    margin-right: 3px;
+    height: 70px;
+    width: 42px;
+    line-height: 73px;
+  }
+  .single-tournament .counter__purpose {
+    font-size: 35px;
+  }
+  .single-tournament .countdown__timer-separator, .single-tournament .countdown__timer-val {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .table-award {
+    margin-bottom: 20px;
+  }
+  .table-winners {
+    &__inner {
+      padding: 0 8px 6px;
+    }
+    &__row {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      &.table-winners__row--head {
+        .table-winners__col {
+          height: 46px;
+        }
+      }
+    }
+    &__col {
+      font-size: 18px;
+      height: 70px;
+      padding: 0 10px;
+      &:nth-child(1) {
+        width: 4%;
+        padding-left: 6px;
+      }
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
+      &:nth-child(3) {
+        width: 20%;
+      }
+      &:nth-child(4) {
+        width: 10%;
+        padding-right: 30px;
+      }
+    }
+    &__user {
+      &-photo {
+        width: 40px;
+        height: 40px;
+      }
+      &-login {
+        padding-left: 10px;
+      }
+    }
+  }
+  .profile-tabs {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    &__wrapper {
+      top: 0;
+    }
+  }
+  .lottery {
+    padding-bottom: 70px;
+  }
+
+  .lottery-block {
+    &__inner {
+      padding: 40px 50px 40px 80px;
+      &:after {
+        top: -190px;
+        left: -227px;
+        height: 570px;
+        width: 570px;
+        background-size: contain;
+      }
+    }
+    .tournament-info__board {
+      &-title {
+        font-size: 30px;
+      }
+    }
+    &__col {
+      &:nth-child(2) {
+        margin: 0 70px 0 60px;
+      }
+    }
+    .counter {
+      &__item {
+        width: 40px;
+        height: 64px;
+        font-size: 40px;
+        line-height: 64px;
+      }
+      &__purpose {
+        font-size: 25px;
+      }
+    }
+    .countdown__timer-separator,
+    .countdown__timer-val {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .countdown__timer-label {
+      font-size: 16px;
+    }
+  }
+  .tickets {
+    &__count {
+      font-size: 60px;
+      line-height: 50px;
+      margin-bottom: 15px;
+
+      &:before {
+        width: 80px;
+        height: 70px;
+        top: -15px;
+        background-size: contain;
+      }
+    }
+  }
+  .secret-word__inner {
+    font-size: 25px;
+    letter-spacing: 9px;
+  }
+}
+
 @media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  .font-20 {font-size: 16px;}
+  .font-18 {font-size: 14px}
+  .font-16 {font-size: 12px;}
+
+  .main, .top-bar {
+    margin-left: 60px;
+  }
   .main {
     padding: 60px 0 0;
+    background: $dark-gradient;
+  }
+  .quick-bar, .quick-bar .nav-links {
+    width: 60px;
+  }
+  .nav-links--v .nav-links__link {
+    min-height: 5vh;
+    font-size: 14px;
+    width: 60px;
+  }
+  .quick-bar__links {
+    padding-top: 60px;
+  }
+  .quick-bar__links .nav-links__link-icon {
+    width: 2.1vh;
+  }
+  .btn-bento {
+    width: 60px;
+    height: 60px;
+
+    &__inner {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .top-bar {
+    margin-left: 60px;
   }
 
   .main-slider {
-    height: 520px;
+    height: 400px;
+    margin-bottom: 0;
 
     &__content {
       padding: 60px;
+      text-align: center;
     }
 
     &__title {
@@ -252,10 +640,19 @@
         font-size: 12px;
       }
     }
+    .main-slider__container .slider__pagination {
+      display: none;
+    }
+    &__slide {
+      align-items: center;
+      &-img {
+        height: 100%;
+      }
+    }
   }
 
   .top-bar {
-    height: 61px;
+    height: 60px;
 
     &__links {
       display: none;
@@ -283,8 +680,401 @@
       display: none;
     }
   }
+  .mf-container {
+    padding-left: 0;
+    padding-right: 1px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .card-tournament .table-entry {
+    display: none;
+  }
+
+  .slider-tournaments {
+    margin-bottom: 40px;
+    .swiper-container {
+      width: 100%;
+    }
+    .swiper-slide {
+      transform: scale(.8);
+      flex-shrink: 0;
+      opacity: 0.85;
+      transition: all 0.4s ease-out;
+      transition-property: transform, opacity, margin;
+      filter: blur(4px);
+      width: auto;
+      margin-bottom: 0;
+
+      &.swiper-slide-prev {
+        transform: scale(.8) translate3d(80px, 0, 0);
+      }
+
+      &.swiper-slide-next {
+        transform: scale(.8) translate3d(-80px, 0, 0);
+      }
+    }
+
+    .swiper-slide-active {
+      transform: scale(1) translateZ(0);
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+      z-index: 98;
+    }
+    .slider-button-next {
+      right: 40px;
+    }
+    .slider-button-prev {
+      left: 40px;
+    }
+  }
+  .jackpot {
+    padding-right: 40px;
+    padding-top: 30px;
+  }
+  .filter-nav__item {
+    margin-right: 8px;
+  }
+  .icon-tab-btn {
+    padding: 7px 9px;
+    width: 85px;
+    &__icon {
+      width: 30px;
+    }
+    &__title {
+      font-size: 12px;
+    }
+  }
+  .game-list-card__body-name {
+    font-size: 15px;
+  }
+  .game-list-action button {
+    min-width: 170px;
+    min-height: 40px;
+  }
+  .winners {
+    margin: 50px 0;
+  }
+  .advantages__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantage-card {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .advantage-card__img-wrap {
+    width: 80px;
+    height: 80px;
+  }
+  .advantage-card__img {
+    width: 50px;
+    height: auto;
+  }
+  .advantage-card__circle {
+    top: -40px;
+  }
+  .winner-item__photo-img {
+    max-width: inherit;
+    max-height: inherit;
+    width: 35px;
+    height: 35px;
+  }
+  .winner-item__info {
+    padding: 0 10px 0 8px;
+  }
+  .winner-item__winning {
+    padding-left: 10px;
+  }
+  .big-title {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
+  .slider-stats .slider-button-prev {
+    left: 20px;
+  }
+  .slider-stats .slider-button-next {
+    right: 20px;
+  }
+
+  .card-tournament__inner {
+    background-image: none;
+    border: 2px solid $color-gold;
+  }
+  img.partners-banner {
+    margin-top: -10px;
+  }
+
+  .page-profile {
+    .page__banner {
+      justify-content: space-between;
+    }
+  }
+  .user-block__inner {
+    border-radius: 0;
+  }
+
+  .presents-block {
+    z-index: 1;
+    &:after {
+      display: none;
+    }
+    &__inner {
+      background: #2d3037;
+      @include gold-linear-border;
+    }
+  }
+  .presents-table__col:nth-child(3) {
+    min-width: auto;
+    padding-left: 8px;
+  }
+  .tournaments-list {
+    padding: 20px 0 50px;
+  }
+  .date-picker__item {
+    font-size: 34px;
+  }
+  .card-tournament {
+    margin-bottom: 25px;
+  }
+  .date-picker__date-year {
+    font-size: 28px;
+  }
+  .table-winners__col:nth-child(3) {
+    display: none;
+  }
+  .lottery-block {
+    &__inner {
+      flex-direction: column;
+      padding: 40px 50px 40px 80px;
+      &:after {
+        top: -140px;
+        left: -97px;
+        height: 290px;
+        width: 280px;
+      }
+    }
+    .tournament-info__board {
+      &-title {
+        font-size: 30px;
+      }
+      &-board {
+        &.countdown {
+          padding-right: 30px;
+        }
+      }
+    }
+    &__col {
+      &:not(:nth-child(3)) {
+        width: 210px;
+      }
+      &:nth-child(1) {
+        margin-bottom: 16px;
+      }
+      &:nth-child(2) {
+        margin: 0;
+      }
+      &:nth-child(3) {
+        @include absolute-vertical-center;
+        left: 90px;
+      }
+    }
+    .counter {
+      &__item {
+        width: 40px;
+        height: 64px;
+        font-size: 40px;
+        line-height: 64px;
+      }
+      &__purpose {
+        font-size: 25px;
+      }
+    }
+    .countdown__timer-separator,
+    .countdown__timer-val {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .countdown__timer-label {
+      font-size: 16px;
+    }
+  }
+  .tickets {
+    &__count {
+      font-size: 100px;
+      line-height: 60px;
+      &:before {
+        width: 160px;
+        height: 90px;
+        top: -25px;
+      }
+    }
+  }
+  .big-promo {
+    &__inner {
+      justify-content: inherit;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 26px;
+      padding-bottom: 10px;
+    }
+    &__notice {
+      bottom: -70px;
+      left: 0;
+      }
+    &__input-wrap {
+      width: 100%;
+      margin: 0 20px 0 0;
+    }
+    &__input {
+      border-radius: $border-radius-min;
+      width: 100%;
+      height: 100%;
+      padding: 12px 18px;
+      border: none;
+      background-color: #232222;
+      background-clip: padding-box;
+      font-size: 16px;
+      color: #ffffff;
+    }
+    &__btn {
+      padding: 0 30px;
+    }
+  }
+  .main-tabs__item {
+    height: 48px;
+  }
+  .main-tabs__content {
+    padding: 15px;
+  }
+  .profile-balance {
+    & > div {
+      padding-right: 7px;
+      &:nth-child(1) {
+        flex: 0 0 60px;
+      }
+      &:nth-child(2) {
+      }
+      &:nth-child(3) {
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    &__curr {
+      font-size: 42px;
+    }
+    &__count {
+      font-size: 24px;
+    }
+    &__limits {
+      font-size: 18px;
+      line-height: 45px;
+    }
+    &__hint {
+      font-size: 12px;
+    }
+  }
+  .form-step {
+    margin-bottom: 20px;
+    &.form-step--bb {
+      padding-bottom: 32px;
+    }
+    &__issue {
+      margin-bottom: 16px;
+    }
+    &__count {
+      margin-right: 7px;
+      width: 34px;
+      height: 34px;
+    }
+    &.form-step--user-data{
+      margin-bottom: 0;
+    }
+    .title-border-right {
+      padding-top: 45px;
+      padding-bottom: 25px;
+    }
+  }
+  .two-auth-block {
+    margin-left: 0;
+    margin-right: 0;
+   &>div {
+     width: 100%;
+     padding-left: 0;
+     padding-right: 0;
+   }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      &>div {
+        width: 240px;
+      }
+    }
+    &__text div:first-child {
+      margin-bottom: 16px;
+    }
+  }
+  .form-left-space {
+    padding-left: 0;
+  }
+  .mobile-apps-block {
+    padding-top: 12px;
+  }
+  .app-link {
+    padding-left: 0;
+    padding-right: 0;
+    &:nth-child(2n) {
+      padding-left: 10px;
+    }
+  }
+  .qr-block__inner {
+    padding: 25px;
+  }
+  .secret-word {
+    margin-bottom: 30px;
+    &__inner {
+      height: 55px;
+      margin: 7px 0;
+      font-size: 24px;
+      letter-spacing: 7px;
+    }
+    &__copy {
+      cursor: pointer;
+      &.copied {
+        border-bottom: 1px solid $color-gold;
+      }
+    }
+  }
+
+  .footer {
+    margin-left: 60px;
+  }
+  .footer-nav__link {
+    font-size: 12px;
+  }
+  .footer-nav__item {
+    padding-bottom: 6px;
+  }
+  .footer-col.fc--p3 {
+    width: 23%;
+  }
+  .footer-copyright {
+    font-size: 10px;
+  }
 }
 @media (max-width: 680px) {
+  .font-28 {font-size: 20px;}
+  .font-24 {font-size: 18px;}
+  .font-23 {font-size: 17px;}
   .top-bar__logo {
     &-img {
       width: 40px;
@@ -293,6 +1083,7 @@
       top: 10px;
     }
   }
+  .main {margin-left: 0}
 
   .main-slider {
     height: auto;
@@ -305,7 +1096,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
       text-align: center;
     }
 
@@ -332,6 +1122,60 @@
     }
   }
 
+  .jackpot {
+    &__content {
+      width: auto;
+      &:before {
+        top: 5px;
+        width: 860px;
+        height: 100px;
+        left: -300px;
+      }
+    }
+    &__block {
+      padding: 10px 45px;
+      &:after {
+        width: 75px;
+        left: -12px;
+      }
+      &:before {
+        width: 75px;
+        right: -12px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    &__price {
+      font-size: 24px;
+      &-curr {
+      }
+    }
+  }
+  .game-list-filters {
+    flex-direction: column-reverse;
+  }
+  .icon-tabs {
+    margin-bottom: 20px;
+  }
+  .icon-tabs,
+  .icon-tabs__inner {
+    width: 100%;
+  }
+  .icon-tab-btn {
+    padding: 24px 9px;
+    width: 33.333333%;
+  }
+
+  .quick-bar {
+    height: 60px;
+    bottom: initial;
+  }
+  .menu-opened .quick-bar {
+    height: 100vh;
+    bottom: 0;
+  }
   .menu-opened .quick-bar,
   .menu-opened .quick-bar .nav-links {
     width: 190px;
@@ -339,5 +1183,738 @@
 
   .nav-links--v .nav-links__title {
     font-size: 12px;
+  }
+
+  .slider-promo .swiper-container {
+    width: 100%;
+  }
+  .slider-promo .slider-button-next,
+  .slider-promo .slider-button-prev {
+    display: none;
+  }
+  .promo-card__info-subtitle {
+    font-size: 16px;
+  }
+  .promo-card__info-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .stat-card__title {
+    padding: 15px 0;
+  }
+  .block-pb-space.partners {padding-bottom: 20px}
+
+  .slider-payments .slider-button-prev,
+  .slider-payments .slider-button-next {
+    display: none;
+  }
+  .slider-payments .swiper-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .page__title {
+    font-size: 26px;
+  }
+  .page__banner {
+    height: 200px;
+  }
+  .presents-block__inner {
+    padding: 20px;
+  }
+  .presents-table__row {
+    margin-bottom: 14px;
+  }
+  .bonuses-list__inner {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+  .bonus-card {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-bottom: 10px;
+  }
+  .main-tabs__content {
+    padding: 10px;
+  }
+
+  .page__banner-tourney-logo.logo--vegas {
+    bottom: -175px;
+    max-width: 420px;
+  }
+  .single-tournament__info {
+    padding-top: 45px;
+  }
+  .single-tournament .counter__item {
+    font-size: 28px;
+    height: 50px;
+    width: 32px;
+    line-height: 52px;
+  }
+  .single-tournament .countdown__timer-separator, .single-tournament .countdown__timer-val {
+    font-size: 38px;
+    line-height: 33px;
+  }
+  .single-tournament .countdown__timer-label {
+    font-size: 14px;
+  }
+  .single-tournament .tournament-info__board-title {
+    font-size: 26px;
+  }
+  .tournaments-list .card-tournament__info-logo {
+    max-width: 340px;
+  }
+  .table-winners__user-photo {
+    width: 30px;
+    height: 30px;
+  }
+  .table-winners__col:nth-child(1) {
+    padding-left: 4px;
+  }
+  .table-winners__col:nth-child(2) {
+    padding-left: 0;
+  }
+  .table-winners__col:nth-child(4) {
+    width: 20%;
+    padding-right: 5px;
+  }
+  .table-winners__col {
+    font-size: 14px;
+    height: 50px;
+    padding: 0 5px;
+  }
+  .regulations-list .ul>li {
+    padding-left: 30px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .regulations-list .ul.ul--check>li:before {
+    top: -2px;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+  }
+  .regulations-list .ul.ul--point>li:before {
+    left: 1px;
+    top: 2px;
+    width: 23px;
+    height: 23px;
+    background-size: contain;
+  }
+  .big-promo__input-wrap {
+    margin: 0 10px 0 0;
+  }
+  .big-promo__btn {
+    min-width: inherit;
+    padding: 0 10px;
+  }
+  .lottery {
+    padding-bottom: 40px;
+  }
+  .lottery-block {
+    .bb-gold__inner {
+      border: solid 2px transparent;
+      &:before {
+        margin: -2px;
+      }
+    }
+    &__inner {
+      padding: 20px 10px 20px 30px;
+      &:after {
+        top: -115px;
+        left: -77px;
+        height: 290px;
+        width: 210px;
+      }
+    }
+    .tournament-info__board {
+      &-title {
+        font-size: 18px;
+        padding-bottom: 6px;
+      }
+      &-board.countdown {
+        padding-right: 25px;
+      }
+    }
+    &__col {
+      &:not(:nth-child(3)) {
+        width: 150px;
+      }
+      &:nth-child(3) {
+        left: 40px;
+      }
+    }
+    .counter {
+      &__item {
+        width: 28px;
+        height: 44px;
+        font-size: 24px;
+        line-height: 45px;
+      }
+      &__purpose {
+        font-size: 18px;
+      }
+    }
+    .countdown__timer-separator,
+    .countdown__timer-val {
+      font-size: 24px;
+      line-height: 20px;
+    }
+    .countdown__timer-label {
+      font-size: 11px;
+    }
+  }
+  .tickets {
+    &__count {
+      font-size: 60px;
+      line-height: 56px;
+      margin-bottom: 6px;
+      &:before {
+        width: 80px;
+      }
+    }
+  }
+  .input-default {
+    height: 33px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .pass-icon {
+    width: 16px;
+  }
+
+  .label {
+    font-size: 15px;
+    padding-bottom: 6px;
+  }
+  .input-tel-wrap__confirm {
+    font-size: 14px;
+  }
+  span.form-error {
+    bottom: -22px;
+    left: 25px;
+    font-size: 12px;
+  }
+  .form-block {
+    flex-wrap: wrap;
+    &__el {
+    }
+    &.form-block--2 {
+      flex-wrap: wrap;
+      & > div {
+        width: 100%;
+        margin-bottom: 15px;
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &.user-data-block {
+      margin-left: -15px;
+      margin-right: -15px;
+      &>div {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:nth-child(1) {
+          margin-bottom: 15px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .form-step .title-border-right {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .switch-label {
+    width: 34px;
+    height: 14px;
+  }
+  .switch-label:after {
+    top: -1px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+  }
+  .switch-input:checked + .switch-label:after {
+    left: 18px;
+  }
+  .switch-block__text {
+    padding: 0 10px;
+  }
+  .prompt {
+    width: 19px;
+    height: 19px;
+    font-size: 10px;
+    line-height: 25px;
+    &.circle-gold-linear {
+      border: 1px solid transparent;
+      &:before {
+        margin: -1px;
+      }
+    }
+  }
+  .personal-data__form-action {
+    padding: 15px 0 30px;
+  }
+  .linked-accs {
+    &__list {
+      padding: 0 10px;
+    }
+    &__item {
+      width: 30px;
+      height: 30px;
+    }
+    &__icon {
+      width: 18px;
+    }
+    .circle-gold-linear:before {
+      margin: -2px;
+    }
+    &__remove {
+      width: 11px;
+    }
+  }
+  .upload-docs__upload {
+    margin: 0 6px 0 10px;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  .tab-link {
+    margin-right: 11px;
+  }
+  .history-tabs__links {
+    margin-bottom: 16px;
+    &-item {
+      font-size: 14px;
+    }
+  }
+  .profile-balance {
+    & > div {
+      &:nth-child(1) {
+        flex: 0 0 60px;
+      }
+      &:nth-child(2) {
+      }
+      &:nth-child(3) {
+      }
+    }
+    &__curr {
+      font-size: 28px;
+    }
+    &__count {
+      font-size: 18px;
+    }
+    &__limits {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    &__hint {
+    }
+    &__row--cash {
+      flex-direction: column;
+      &>div:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+  .footer__inner {
+    margin: 0 -10px;
+    padding-bottom: 20px;
+  }
+  .footer-col {
+    padding: 0 10px;
+  }
+  .footer-col.fc--p3 {width: 35%;}
+  .footer-col.fc--p4 {display: none}
+}
+
+@media (max-width: 540px) {
+  body {font-size: 12px;}
+  .font-24 {font-size: 16px;}
+  .font-20 {font-size: 14px; }
+  .font-18 {font-size: 12px;}
+  .font-16 {font-size: 10px;}
+  .font-14 {font-size: 9px;}
+
+  .big-title {
+    font-size: 26px;
+    padding-bottom: 15px;
+  }
+  .slider-tournaments .slider-button-prev {
+    left: 10px;
+  }
+  .slider-tournaments .slider-button-next {
+    right: 10px;
+  }
+  .card-tournament {
+    width: 280px;
+    padding: 7px;
+    &__container {
+      padding: 0 15px;
+    }
+    &__inner {
+      padding: 0 3px;
+    }
+
+    &__info {
+      &-logo {
+        margin-bottom: -15px;
+        top: 0;
+        max-width: 220px;
+      }
+    }
+    &__btn-wrap {
+      width: 100%;
+      height: 100px;
+    }
+    &__btn {
+    }
+  }
+
+  .tournament-info {
+    &__title {
+      font-size: 18px;
+    }
+    &__board {
+      &-title {
+        font-size: 17px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  .counter__item {
+    font-size: 18px;
+    margin-right: 2px;
+    height: 34px;
+    width: 20px;
+    line-height: 34px;
+  }
+  .counter__purpose {
+    padding-left: 5px;
+  }
+  .countdown__timer-separator, .countdown__timer-val {
+    font-size: 22px;
+  }
+  .card-tournament__btn {
+    width: 140px;
+    height: 35px;
+  }
+  .jackpot {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    &__price {
+      font-size: 17px;
+      &-curr {
+        font-size: 24px;
+      }
+    }
+    &__content {
+      width: 100%;
+      &:before {
+        top: 15px;
+        width: 960px;
+        height: 70px;
+        left: -210px;
+      }
+    }
+    &__block {
+      padding: 10px 20px;
+    }
+  }
+  .game-categories {
+    margin: 30px 0;
+  }
+  .icon-tab-btn {
+    padding: 18px 9px;
+  }
+  .game-list-card {
+    margin-bottom: 8px;
+  }
+  .game-list-card__body-img {
+    margin-bottom: 5px;
+  }
+  .game-list-card__body-name {
+    font-size: 12px;
+  }
+  .game-list-action {
+    margin-top: 10px;
+
+    button {
+      min-width: 140px;
+      min-height: 35px;
+    }
+  }
+  .game-list-filters {
+    margin-bottom: 20px;
+  }
+  .winner-item {
+    align-items: center;
+    &__photo {
+      width: 26px;
+      height: 26px;
+      &-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__info {
+      padding: 0 7px 0 6px;
+      &-inner {
+        line-height: 12px;
+      }
+    }
+    &__winning {
+      padding-left: 5px;
+    }
+  }
+
+  .user-block {
+    &__inner {
+      padding: 10px;
+    }
+    &__photo {
+      width: 50px;
+      height: 50px;
+    }
+    &__action {
+      &-link {
+        margin-right: 10px;
+      }
+      &-icon {
+        width: 15px;
+      }
+    }
+  }
+
+  .promo-card {
+    padding: 4px;
+    &__img {
+      max-width: 80px;
+    }
+    &__info {
+      &-title {
+        font-size: 17px;
+        padding-bottom: 8px;
+      }
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+  .block-pb-space {
+    padding-bottom: 25px;
+  }
+  .top-games {
+    padding: 35px 0;
+  }
+  .stat-card__btn {
+    margin-top: 15px;
+    padding: 6px 22px;
+  }
+  .advantages .big-title {
+    margin-bottom: 30px;
+  }
+  .advantage-card {
+    margin-bottom: 40px;
+  }
+  .advantage-card__img-wrap {
+    width: 50px;
+    height: 50px;
+  }
+  .advantage-card__circle {
+    top: -26px;
+  }
+  .advantage-card__img {
+    width: 30px;
+  }
+  .advantage-card__inner {
+    min-height: 160px;
+    padding: 50px 20px 20px;
+  }
+
+  .page-bg-section {
+    padding-top: 25px;
+  }
+  .page__banner {
+    height: 170px;
+  }
+  .page__title {
+    font-size: 22px;
+  }
+  .presents .middle-title {
+    padding-bottom: 10px;
+  }
+  .middle-title {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+  .bonus-card {
+    &__inner {
+      padding: 4px;
+    }
+    &__photo-item {
+      height: 100px;
+      border-radius: 5px;
+    }
+    &__info {
+      top: 7px;
+      left: 7px;
+      width: 18px;
+      height: 18px;
+      &-inner {
+        border-radius: 3px;
+        &.bb-gold__inner {
+          border: solid 1px transparent;
+          &:before {
+            margin: -1px;
+          }
+        }
+      }
+    }
+  }
+  .date-picker {
+    height: 70px;
+  }
+  .date-picker__date-year {
+    font-size: 22px;
+  }
+  .date-picker__item {
+    font-size: 25px;
+  }
+  .table-winners__col:nth-child(4) {
+    white-space: inherit;
+  }
+  .page__banner-tourney-logo.logo--vegas {
+    bottom: -150px;
+    max-width: 350px;
+  }
+  .form-step.form-step--bb {
+    padding-bottom: 20px;
+  }
+  .form-step__count {
+    width: 26px;
+    height: 26px;
+  }
+  .profile-tabs {
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  .qr-block__inner {
+    padding: 10px;
+  }
+  .two-auth-block__left>div {
+    width: 150px;
+  }
+  .app-link {
+    height: 28px;
+  }
+  .app-link__inner.bb-gold__inner {
+    border: 1px solid transparent;
+    &:before {
+      margin: -1px;
+    }
+  }
+  .two-auth-block__text {
+    margin-bottom: 25px;
+  }
+  .secret-word__inner {
+    padding: 0;
+    height: 40px;
+    margin: 5px 0;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  .activity__icon-wrap {
+    margin-right: 8px;
+    height: 26px;
+    width: 26px;
+  }
+  .activity__icon {
+    max-width: 12px;
+    max-height: 13px;
+  }
+  .big-promo {
+    &__form {
+      flex-direction: column;
+    }
+    &__notice {
+      bottom: -115px;
+      &-link {
+        display: block;
+      }
+    }
+    &__title {
+      font-size: 18px;
+      padding-bottom: 8px;
+    }
+    &__input {
+      padding: 5px 12px;
+      font-size: 13px;
+    }
+    &__btn {
+      margin-top: 15px;
+      max-width: 160px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .main-tabs__item {
+    height: 38px;
+  }
+  .history-tabs__links-item {
+    font-size: 12px;
+  }
+  .history-cashier-btn {
+    margin-left: auto;
+    min-width: 90px;
+  }
+
+  .profile-balance {
+    & > div {
+      &:nth-child(1) {
+        flex: 0 0 50px;
+      }
+      &:nth-child(2) {
+        flex: 0 0 35%;
+        padding-right: 10px;
+      }
+      &:nth-child(3) {
+      }
+    }
+    &__curr {
+      font-size: 28px;
+    }
+    &__count {
+      font-size: 18px;
+    }
+    &__limits {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__hint {
+      font-size: 10px;
+    }
+    &__btn {
+      min-width: 90px;
+    }
+  }
+
+  .footer-col.fc--p1 {
+    display: none;
+  }
+  .footer-col.fc--p2 {
+    width: 40%;
+  }
+  .footer-col.fc--p3 {
+    width: 55%;
   }
 }

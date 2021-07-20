@@ -44,6 +44,7 @@ function scripts() {
         'node_modules/swiper/swiper-bundle.js',
         'app/js/popper.min.js',
         'app/js/tippy-bundle.umd.js',
+        'app/js/sliders.js',
         'app/js/main.js',
     ])
         .pipe(concat('main.min.js'))
